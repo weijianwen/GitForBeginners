@@ -1,3 +1,24 @@
+\documentclass[14pt]{beamer}
+\usetheme{Warsaw}
+
+\title{The Main Title}
+\subtitle{The Subtitle}
+\author[Jianwen W.]{Jianwen WEI}
+\institute[SJTU]{
+  School of Electronic Information and Electrical Engineering \\ 
+  Shanghai Jiaotong University \\ 
+  Shanghai 200240, China
+}
+\date{\today}
+
+
+\begin{document}
+
+%----------- titlepage ----------------------------------------------%
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
 \begin{frame}\frametitle{What is Version Control System?}
 
 \end{frame}
@@ -6,32 +27,44 @@
 
 \end{frame}
 
-\begin{frame}[fragile]\frametitle{VCS Work Flow Categories}
+\begin{frame}\frametitle{VCS Work Flow Categories}
 
-\begin{verbatim}
- - Centralized: VSS, CVS, Subversion
- - Distributed (centralized workflow is also supported here) : BitKeeper, git, mercurial, …
-\end{verbatim}
+\begin{itemize}
+\item
+  Centralized: VSS, CVS, Subversion
+\item
+  Distributed (centralized workflow is also supported here) : BitKeeper,
+  git, mercurial, \ldots{}
+\end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]\frametitle{Why git is better than Subversion}
+\begin{frame}\frametitle{Why git is better than Subversion}
 
-\begin{verbatim}
- - git is super fast
- - Full repository clone
- - Local history: you don't need to connect to the server when viewing the commit history
- - github: social coding
- - Other things: better compression, multi workflow support, …
-\end{verbatim}
+\begin{itemize}
+\item
+  git is super fast
+\item
+  Full repository clone
+\item
+  Local history: you don't need to connect to the server when viewing
+  the commit history
+\item
+  github: social coding
+\item
+  Other things: better compression, multi workflow support, \ldots{}
+\end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]\frametitle{General Advice on Learning git}
+\begin{frame}\frametitle{General Advice on Learning git}
 
-\begin{verbatim}
- - Try git and github 
- - Most graphical tool/plugsins suck. Please use the command-line git.
- - Find "how-to" on Google, StackOverflow, git book
-\end{verbatim}
+\begin{itemize}
+\item
+  Try git and github
+\item
+  Most graphical tool/plugsins suck. Please use the command-line git.
+\item
+  Find ``how-to'' on Google, StackOverflow, git book
+\end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{Thumb-up Rules of Using git}
@@ -123,3 +156,5 @@
 \begin{frame}\frametitle{Exercise: Time Machine}
 
 \end{frame}
+
+\end{document}

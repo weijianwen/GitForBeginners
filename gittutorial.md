@@ -3,20 +3,20 @@
 # Why we need a VCS?
 
 # VCS Work Flow Categories
-     - Centralized: VSS, CVS, Subversion
-     - Distributed (centralized workflow is also supported here) : BitKeeper, git, mercurial, …
+   - Centralized: VSS, CVS, Subversion
+   - Distributed (centralized workflow is also supported here) : BitKeeper, git, mercurial, …
 
 # Why git is better than Subversion
-     - git is super fast
-     - Full repository clone
-     - Local history: you don't need to connect to the server when viewing the commit history
-     - github: social coding
-     - Other things: better compression, multi workflow support, …
+   - git is super fast
+   - Full repository clone
+   - Local history: you don't need to connect to the server when viewing the commit history
+   - github: social coding
+   - Other things: better compression, multi workflow support, …
 
 # General Advice on Learning git
-     - Try git and github 
-     - Most graphical tool/plugsins suck. Please use the command-line git.
-     - Find "how-to" on Google, StackOverflow, git book
+   - Try git and github 
+   - Most graphical tool/plugsins suck. Please use the command-line git.
+   - Find "how-to" on Google, StackOverflow, git book
 
 #  Thumb-up Rules of Using git
    - "A clear development workflow is worth a bunch of version control systems." 
