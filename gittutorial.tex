@@ -1,23 +1,40 @@
-\documentclass[14pt]{beamer}
+\documentclass[14pt,ignorenonframetext,]{beamer}
 \usetheme{Warsaw}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifxetex
+  \usepackage{fontspec,xltxtra,xunicode}
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+\else
+  \ifluatex
+    \usepackage{fontspec}
+    \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \else
+    \usepackage[utf8]{inputenc}
+  \fi
+\fi
+% Comment these out if you don't want a slide with just the
+% part/section/subsection/subsubsection title:
+\AtBeginPart{\frame{\partpage}}
+\AtBeginSection{\frame{\sectionpage}}
+\AtBeginSubsection{\frame{\subsectionpage}}
+\AtBeginSubsubsection{\frame{\subsubsectionpage}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\setcounter{secnumdepth}{0}
 
-\title{The Main Title}
-\subtitle{The Subtitle}
-\author[Jianwen W.]{Jianwen WEI}
-\institute[SJTU]{
-  School of Electronic Information and Electrical Engineering \\ 
-  Shanghai Jiaotong University \\ 
-  Shanghai 200240, China
-}
+\title{Learning by Doing\\{}A Short Introduction to git}
+\author{Jianwen WEI}
 \date{\today}
-
+\institute[SJTU]{
+	School of Electronic Information and Electrical Engineering \\ 
+	Shanghai Jiaotong University \\ 
+	Shanghai 200240, China
+}
 
 \begin{document}
-
-%----------- titlepage ----------------------------------------------%
-\begin{frame}[plain]
-  \titlepage
-\end{frame}
+\frame{\titlepage}
 
 \begin{frame}\frametitle{What is Version Control System?}
 
@@ -31,10 +48,12 @@
 
 \begin{itemize}
 \item
-  Centralized: VSS, CVS, Subversion
+  Centralized: {[}VSS{]}{[}{]}, {[}CVS{]}{[}{]},
+  {[}Subversion(svn){]}{[}{]}
 \item
-  Distributed (centralized workflow is also supported here) : BitKeeper,
-  git, mercurial, \ldots{}
+  Distributed (centralized workflow is also supported here) :
+  {[}BitKeeper{]}{[}{]}, {[}git{]}{[}{]}, {[}mercurial{]}{[}{]},
+  \ldots{}
 \end{itemize}
 \end{frame}
 
@@ -61,13 +80,16 @@
 \item
   Try git and github
 \item
-  Most graphical tool/plugsins suck. Please use the command-line git.
+  Most graphical tool/plugsins \emph{SUCK}. Please use the command-line
+  git.
 \item
-  Find ``how-to'' on Google, StackOverflow, git book
+  Read git's prompts, run \textbf{git help} to get help.
+\item
+  Find ``how-to'' on Google, StackOverflow, git book.
 \end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Thumb-up Rules of Using git}
+\begin{frame}\frametitle{Rules of Thumb for git}
 
 \begin{itemize}
 \item
@@ -84,7 +106,7 @@
   Stay on your own branch.
 \item
   Do NOT edit files in .git directory unless you know exactly what you
-  are doing. 
+  are doing.
 \end{itemize}
 \end{frame}
 
@@ -114,11 +136,25 @@
 \item
   branch
 \item
+  submodule
+\item
   Oh, there is a conflict!!!
 \item
   ``Time Machine'': stash, stash list, checkout to a commit, checkout to
   master
 \end{itemize}
+\begin{block}{git command: \emph{init}}
+
+\begin{itemize}
+\item
+  init
+\item
+  add
+\item
+  commit
+\end{itemize}
+\end{block}
+
 \end{frame}
 
 \begin{frame}\frametitle{Exercise: git environment}

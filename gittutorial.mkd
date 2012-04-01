@@ -1,0 +1,90 @@
+# What does  Version Control System do?
+<!-- Plese refer to Version Control with Git and add some texts -->
+
+<!-- # Why we need a VCS? --> 
+<!-- Plese refer to Version Control with Git and add some texts -->
+
+# VCS Work Flow Categories
+  - Centralized: [VSS], [CVS], [SVN]
+   - Distributed (centralized work flow is also supported) : [BitKeeper], [git], [mercurial] …
+
+[VSS]: http://msdn.microsoft.com/en-us/library/3h0544kx(v=vs.80).aspx
+[CVS]: http://www.nongnu.org/cvs/
+[SVN]: http://subversion.apache.org/
+[BitKeeper]: http://www.bitkeeper.com/
+[git]: http://git-scm.com/
+[mercurial]: http://mercurial.selenic.com/ 
+
+# Why git is better than Subversion
+   - git is super fast
+   - Full repository clone
+   - Local history: no need to connect to the server when viewing the revision history
+   - Cheap branch and easy merge
+   - github: social coding
+   - Other things: better compression, multi work flow support, …
+
+# General Advice on Learning git
+   - Try git and github 
+   - Most graphical tool/plug-ins *SUCK*. Please use the command-line git.
+   - Read git's prompts, run **git help** to get help.
+   - Find "how-to" on Google, StackOverflow, git book.
+
+#  Rules of Thumb for git
+   - "A clear development flow is worth thousands of VCSs." 
+   - Modular design, avoid simultaneous source file editing by different members.
+   - Head version at master branch is always ready to deploy.
+   - Modification is made on branches, then merged into master.
+   - Stay on your own branch.
+   - Write a comment to each commit.
+
+<!-- - Do NOT edit files in .git directory unless you know exactly what you are doing. -->
+
+# git work flow on a stand-alone computer
+   <!--- Insert a git revision graph -->
+
+# git work flow with a central repository
+   <!--- Insert a git revision graph -->
+
+# git work flow with multi repositories
+   <!--- All repos are peers-->
+
+# File's States in Your Working Directory 
+
+# git command
+   - init
+   - add
+   - commit
+   - tag
+   - branch
+   - submodule
+   - Oh, there is a conflict!!!
+   - "Time Machine": stash, stash list, checkout to a commit, checkout to master
+
+# git command: *init*
+   - init
+   - add
+   - commit
+
+# Exercise: git environment
+<!--- Configure the git environment and create a github account (name, email, SSH key, refer to github's help. Please read github's manual carefully. More things you should know about SSH: public key, private key, passphrase for accessing the private key) -->
+
+# Exercise: git local repo
+<!--- Initialize a local project, EDIT, status, add, comiit, try .gitignore file -->
+
+# Exercise: diff
+
+# Exercise: branch
+<!--- branch Create a new branch, EDIT, merge it into master -->
+
+# Exercise: github
+<!--- Create a new repo at github, push a local git repo to it and clone the github repo to other place locally. Hope you feel comfortable with ADD-COMMIT-PUSH-PULL-CLONE commands. -->
+
+# Exercise: Remote Branch
+<!--- git push GITHUB_URL BRACNNAME;   git push URL :BRANCH;  git merge BRANCH master -->
+
+# Exercise: Conflicts
+
+# Exercise: tag
+
+# Exercise: Time Machine
+
