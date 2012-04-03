@@ -5,3 +5,4 @@
 *.snm
 *.toc
 *.swp
+.DS_Store

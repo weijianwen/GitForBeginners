@@ -1,12 +1,16 @@
-# What does  Version Control System do?
-<!-- Plese refer to Version Control with Git and add some texts -->
+# What does a [Version Control System][vcs] do?
+  * Track source code
+   - Code history, integrity, atomic change...
+  * Coordinate distributed development
+   - branch, merge conflicts...
 
-<!-- # Why we need a VCS? --> 
-<!-- Plese refer to Version Control with Git and add some texts -->
+  ![VCS general work flow](vcsflow.png "VCS work flow")
+
+[vcs]: http://en.wikipedia.org/wiki/Revision_control
 
 # VCS Work Flow Categories
   - Centralized: [VSS], [CVS], [SVN]
-   - Distributed (centralized work flow is also supported) : [BitKeeper], [git], [mercurial] …
+  - Distributed (centralized work flow is also supported) : [BitKeeper], [git], [mercurial] …
 
 [VSS]: http://msdn.microsoft.com/en-us/library/3h0544kx(v=vs.80).aspx
 [CVS]: http://www.nongnu.org/cvs/
@@ -15,58 +19,212 @@
 [git]: http://git-scm.com/
 [mercurial]: http://mercurial.selenic.com/ 
 
-# Why git is better than Subversion
+# Why git is better than X (SVN, CVS, ...)
    - git is super fast
    - Full repository clone
-   - Local history: no need to connect to the server when viewing the revision history
+   - Local history: no need to connect to servers when viewing the revision history
    - Cheap branch and easy merge
-   - github: social coding
-   - Other things: better compression, multi work flow support, …
+   - [github]: social coding[^othergit]
+   - Other things: tidy working directory, better compression, multi work flow support, …
+
+[^othergit]: [bitbucket](https://bitbucket.org), [Google Code](http://code.google.com) support git too, but github in no doubt has more *fun*.
+
+<!-- TODO: Add bitbucket, Google Code support git too, but uncomparable to github. -->
 
 # General Advice on Learning git
-   - Try git and github 
-   - Most graphical tool/plug-ins *SUCK*. Please use the command-line git.
+   - Try git and [github]
+   - Most graphical tool/plug-ins[^gittools] *SUCK*. Please use the command-line git.
    - Read git's prompts, run **git help** to get help.
    - Find "how-to" on Google, StackOverflow, git book.
+
+[^gittools]: [tortoisegit](http://code.google.com/p/tortoisegit/), [gitk](http://lostechies.com/joshuaflanagan/2010/09/03/use-gitk-to-understand-git/), [EGit](http://www.eclipse.org/egit/), [Snow Octocat](https://github.com/blog/1067-github-for-mac-1-2-snow-octocat)... But please, oh please use the comman-line tool.
+[github]: https://github.com/
 
 #  Rules of Thumb for git
    - "A clear development flow is worth thousands of VCSs." 
    - Modular design, avoid simultaneous source file editing by different members.
-   - Head version at master branch is always ready to deploy.
+   - Head version at master is always ready to deploy.
    - Modification is made on branches, then merged into master.
    - Stay on your own branch.
    - Write a comment to each commit.
 
 <!-- - Do NOT edit files in .git directory unless you know exactly what you are doing. -->
 
-# git work flow on a stand-alone computer
-   <!--- Insert a git revision graph -->
+# To get started, I will...
+  - Illustrate git's various work flows.
 
-# git work flow with a central repository
-   <!--- Insert a git revision graph -->
+  - Explain the most frequently used git commands.
 
-# git work flow with multi repositories
-   <!--- All repos are peers-->
+  - Give exersices for self check. Some of the exercises require github access. 
 
-# File's States in Your Working Directory 
+# git's stand-alone work flow
+  - You can use git on a stan-alone computer and easily integrate the code into a more sophiscated work flow (distributed or centralized) later
+
+  ![gitalone](gitstandalone.jpeg "git stand-alone work flow")
+
+# git's typical distributed work flow
+  - Every collaberator keeps a full clone of the repository.
+  - All repositories are peers.
+  - All these repositories are not necessarily consistent. Use push/pull to exchange changes.
+
+  ![gitdvcs](gitdvcs.jpeg "git distributed work flow")
+
+# git's emulation to the centralized work flow (**RECOMMENDED**)
+  - It's emulation, not real.  
+  - The statement, "all repositories are peers.", still holds.
+  - We pretend that we see the central repo only, unware of each other's peer repo.
+
+  ![gitcent](gitcent.jpeg "git's emulation to the centralized work flow")
+
+# Set up git
+  - Please follow github's nice tutorials to set up git on [Windows][gitonwin], [Linux][gitonlinux] or [Mac][gitonmac].
+  - [Must-known things about SSH keys][sshthings]: private key, public key, the passphrase to access the private key, key fingerprint.
+  - Don't forget to set *user.name* and *user.email*[^gitemail] before your very first git commit.
+
+[gitonwin]: http://help.github.com/win-set-up-git/
+[gitonlinux]: http://help.github.com/linux-set-up-git
+[gitonmac]: http://help.github.com/mac-set-up-git/
+<!-- [^githubmail]: The email you fill in when signing up is used for web login and password reset only.  github uses SSH key pairs for authentication --> 
+[^gitemail]: Usernames and emails in git's configuration are for identification purpose only, not for sending emails. It is highly recommended that the email in git and SSH keeps the same.
+[sshthings]: http://linux.vbird.org/linux_server/0310telnetssh.php#ssh_server
 
 # git command
-   - init
-   - add
-   - commit
-   - tag
-   - branch
-   - submodule
-   - Oh, there is a conflict!!!
-   - "Time Machine": stash, stash list, checkout to a commit, checkout to master
+  - help
+  - init
+  - status
+  - add
+  - commit
+  - diff
+  - tag
+  - Working with branch: branch, checkout, merge
+  - Working with remotes: clone, remote, push/pull
+  - submodule
+  - Oh, there is a conflict!!!
+  - "Time Machine": stash, stash list, checkout to a commit, checkout to master
 
-# git command: *init*
-   - init
-   - add
-   - commit
+# *help*: Get help
+  + *git help COMMAND*
+   - *git help add*
+   - *git help commit*
+   - ...
+
+# *init*: Initialize a local git repo for your project
+  + *init* command:
+   - *cd YOUR_REPO_DIR*
+   - *git init .*
+  + *init* command will create a *.git* dir on the top level of your project.  
+
+# *status*: Show the status of your repo
+  + *git status*
+  + *status* tells you how to **UNDO** the last operation on git
+  + [File status][gitstatus]: *untracked*, *unstaged*, *staged* (indexed), *committed*[^commitstatus] 
+
+  ![gitlifecyle](figures/gitlifecycle.png "git File Status Lifecycle")
+
+[gitstatus]: http://progit.org/book/ch2-2.html
+[^commitstatus]: The *committed* status simply displays nothing when running *git status*. 
+
+# *add*: A multi-function git command
+  + *git add FILES_OR_DIR*  
+  + For untracked files: *add* them to git's control
+  + For unstaged changes: *add* them to the staged area
+  + For conflicted files: *add* marks them as "resolved"
+
+# commit: Store the status (snapshot) permanantly
+  + *git commit -m "YOUR_COMMENT"*
+   - *git commit* stores the STAGED changes only
+   - *git commit -a* stores all the STAGED and UNSTAGED chcages.
+  + Each commit is identified by a **UNIQUE** SHA-1 ID of 40 ascii characters.
+  + Please write comment for each of your commit.
+
+# diff: Find differnces 
+  + *git diff* 
+   - changes between the staged and working files
+  + *git diff --staged* 
+   - changes between the HEAD and the staged files
+  + *git diff HEAD*
+   - changes between the HEAD and the working files
+  + *git diff COMMIT_ID COMMIT_ID*
+   - changes between two commits
+
+# tag: A milestone version
+  + See all the tag: *git tag*
+  + See a tag in detail: *git show TAG_NAME*
+  + Add a "lightweight" tag: *git TAG_NAME*
+  + Add a tag: *git -a TAG_NAME -M YOUR_COMMNET*
+  + Delete a tag: *git tag -d TAG_NAME*
+
+# Working with **branch**: branch, checkout, merge
+A branch-based development flow:
+ 1. Create a branch
+ 2. Switch to the newly-created branch
+ 3. Modify and commit on the branch
+ 4. Merge branch's changes into trunk.
+
+# Working with **branch**: *branch*, checkout, merge
+  + *git branch* See all the branches
+  + *git branch BRANCH_NAME* Creat a branch
+  + *git branch -d BRANCH_NAME* Delete a branch
+  + *git branch -D BRANCH_NAME* Force delete a branch
+
+# Working with **branch**: branch, *checkout*, merge
+  + *git checkout BRANCH_NAME* Switch to a branch. The wroking files will change.[^termcheckout]
+  + *git checkout -f BRANCH_NAME* Force switch to a branch 
+  + *git checkout master* Go back to trunk, named *master* in git.
+  + *git checkout -b BRANCH_NAME* Create a branch then switch to it.
+
+[^termcheckout]: Don't confuse git's term *checkout* here with subversion's checkout.
+
+# Working with **branch**: branch, checkout, *merge*
+  + *git merge BRANCH_A BRANCH_B* Merge branch_a's and branch_b's changes into *current* branch
+  + *git checkout master, git merge master BRANCH_NAME* Merge changes into trunk--the master branch.
+
+# Working with **remotes**: *clone*, remote, push, pull
+  + *git clone REPO_URL* Full clone of a repo.
+  + URL can be in forms of local dir (~/proj), git (git://xxx), SSH (ssh://xxx), https (http://xxx)...
+
+# Working with **remotes**: clone, *remote*, push, pull
+  + *remote* manages the set of tracked repositories.[^gitremote]
+  + *git remote* Show all the tracked repositories.
+  + *git remote show REPO_NAME* Show the repo's details.
+  + *git remote add REPO_NAME REPO_URL* Add a remote repo to tracked list.
+  + *git remote -d REPO_NAME* Remove a remote repo from the tracked list. 
+
+# Working with **remotes**: clone, remote, *push, pull*
+  + *git pull REPO_NAME BRANCH_NAME* Merge remote branch's changes into current branch.
+  + *git push REPO_NAME BRANCH_NAME* Push current branch's changes to the remote branch.
+
+# Oh, there is a conflict!!!
+  + It looks like:
+
+<!-- TODO: Add some conflicting code -->
+
+  + Don't panic. Confilicts are no big deal, sometimes even inevitable.
+  + What you should do: merge the conflicts, mark the files as "resolved".
+
+# Working with conflicts: merge, resolve, commit
+  1. You have to edit the conflicted files, merge conflicts MANNUALLY. *diff* command may help you.
+  2. *git add CONFILCT_FILES* Mark the file as resolved, or OK to be used.
+  3. *git commit -m "YOUR_COMM"* Commit your modification to the repo.
+
+# "Time Machine": *stash*, checkout
+*stash* saves your temporary work and resets the files to HEAD version. You can handle some emergency fix first then continue to hack at a latter time.  
+
+1. *git stash* Save the temp changes.
+3. *git stash list* Check the stash list.
+2. EDIT and COMMIT your emergency fix.
+4. *git stash pop* Continue to hack
+
+# "Time Machine": stash, *checkout*
+*checkout* enable you to go backward and forward in the revision history.
+1. *git checkout COMMITID_OR_TAGNAME* [^commitid]
+2. You are on a *unamed* branch with file status dating back. Do anything you want.
+3. *git checkout master* Come back to master.
+
+[^commitid]: The full commit ID is 40 charaters long. But you may type a short prefix (like 4~6 charaters) to refer to a commit uniquely.
 
 # Exercise: git environment
-<!--- Configure the git environment and create a github account (name, email, SSH key, refer to github's help. Please read github's manual carefully. More things you should know about SSH: public key, private key, passphrase for accessing the private key) -->
+<!--- Configure the git environment and create a github account (name, email, SSH key, refer to github's help. Please read github's manual carefully. More things you should know about SSH: public key, private key, passphrase for accessing the 
 
 # Exercise: git local repo
 <!--- Initialize a local project, EDIT, status, add, comiit, try .gitignore file -->
