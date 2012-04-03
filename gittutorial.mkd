@@ -37,7 +37,7 @@
    - Read git's prompts, run **git help** to get help.
    - Find "how-to" on Google, StackOverflow, git book.
 
-[^gittools]: [tortoisegit](http://code.google.com/p/tortoisegit/), [gitk](http://lostechies.com/joshuaflanagan/2010/09/03/use-gitk-to-understand-git/), [EGit](http://www.eclipse.org/egit/), [Snow Octocat](https://github.com/blog/1067-github-for-mac-1-2-snow-octocat)... But please, oh please use the comman-line tool.
+[^gittools]: [tortoisegit](http://code.google.com/p/tortoisegit/), [gitk](http://lostechies.com/joshuaflanagan/2010/09/03/use-gitk-to-understand-git/), [EGit](http://www.eclipse.org/egit/), [Snow Octocat](https://github.com/blog/1067-github-for-mac-1-2-snow-octocat)... But please, oh please use the command-line tool.
 [github]: https://github.com/
 
 #  Rules of Thumb for git
@@ -55,15 +55,15 @@
 
   - Explain the most frequently used git commands.
 
-  - Give exersices for self check. Some of the exercises require github access. 
+  - Give exercises for self check. Some of the exercises require github access. 
 
 # git's stand-alone work flow
-  - You can use git on a stan-alone computer and easily integrate the code into a more sophiscated work flow (distributed or centralized) later
+  - You can use git on a stand-alone computer and easily integrate the code into a more sophisticated work flow (distributed or centralized) later
 
   ![gitalone](gitstandalone.jpeg "git stand-alone work flow")
 
 # git's typical distributed work flow
-  - Every collaberator keeps a full clone of the repository.
+  - Every collaborator keeps a full clone of the repository.
   - All repositories are peers.
   - All these repositories are not necessarily consistent. Use push/pull to exchange changes.
 
@@ -72,13 +72,13 @@
 # git's emulation to the centralized work flow (**RECOMMENDED**)
   - It's emulation, not real.  
   - The statement, "all repositories are peers.", still holds.
-  - We pretend that we see the central repo only, unware of each other's peer repo.
+  - We pretend that we see the central repo only, unaware of each other's peer repo.
 
   ![gitcent](gitcent.jpeg "git's emulation to the centralized work flow")
 
 # Set up git
   - Please follow github's nice tutorials to set up git on [Windows][gitonwin], [Linux][gitonlinux] or [Mac][gitonmac].
-  - [Must-known things about SSH keys][sshthings]: private key, public key, the passphrase to access the private key, key fingerprint.
+  - [Must-known things about SSH keys][sshthings]: private key, public key, the pass phrase to access the private key, key fingerprint.
   - Don't forget to set *user.name* and *user.email*[^gitemail] before your very first git commit.
 
 [gitonwin]: http://help.github.com/win-set-up-git/
@@ -130,14 +130,14 @@
   + For unstaged changes: *add* them to the staged area
   + For conflicted files: *add* marks them as "resolved"
 
-# commit: Store the status (snapshot) permanantly
+# commit: Store the status (snapshot) permanently
   + *git commit -m "YOUR_COMMENT"*
    - *git commit* stores the STAGED changes only
-   - *git commit -a* stores all the STAGED and UNSTAGED chcages.
-  + Each commit is identified by a **UNIQUE** SHA-1 ID of 40 ascii characters.
+   - *git commit -a* stores all the STAGED and UNSTAGED changes.
+  + Each commit is identified by a **UNIQUE** SHA-1 ID of 40 ASCII characters.
   + Please write comment for each of your commit.
 
-# diff: Find differnces 
+# diff: Find differences 
   + *git diff* 
    - changes between the staged and working files
   + *git diff --staged* 
@@ -151,7 +151,7 @@
   + See all the tag: *git tag*
   + See a tag in detail: *git show TAG_NAME*
   + Add a "lightweight" tag: *git TAG_NAME*
-  + Add a tag: *git -a TAG_NAME -M YOUR_COMMNET*
+  + Add a tag: *git -a TAG_NAME -M YOUR_COMMENT*
   + Delete a tag: *git tag -d TAG_NAME*
 
 # Working with **branch**: branch, checkout, merge
@@ -163,12 +163,12 @@ A branch-based development flow:
 
 # Working with **branch**: *branch*, checkout, merge
   + *git branch* See all the branches
-  + *git branch BRANCH_NAME* Creat a branch
+  + *git branch BRANCH_NAME* Create a branch
   + *git branch -d BRANCH_NAME* Delete a branch
   + *git branch -D BRANCH_NAME* Force delete a branch
 
 # Working with **branch**: branch, *checkout*, merge
-  + *git checkout BRANCH_NAME* Switch to a branch. The wroking files will change.[^termcheckout]
+  + *git checkout BRANCH_NAME* Switch to a branch. The working files will change.[^termcheckout]
   + *git checkout -f BRANCH_NAME* Force switch to a branch 
   + *git checkout master* Go back to trunk, named *master* in git.
   + *git checkout -b BRANCH_NAME* Create a branch then switch to it.
@@ -199,12 +199,12 @@ A branch-based development flow:
 
 <!-- TODO: Add some conflicting code -->
 
-  + Don't panic. Confilicts are no big deal, sometimes even inevitable.
+  + Don't panic. Conflicts are no big deal, sometimes even inevitable.
   + What you should do: merge the conflicts, mark the files as "resolved".
 
 # Working with conflicts: merge, resolve, commit
-  1. You have to edit the conflicted files, merge conflicts MANNUALLY. *diff* command may help you.
-  2. *git add CONFILCT_FILES* Mark the file as resolved, or OK to be used.
+  1. You have to edit the conflicted files, merge conflicts MANUALLY. *diff* command may help you.
+  2. *git add CONFLICT_FILES* Mark the file as resolved, or OK to be used.
   3. *git commit -m "YOUR_COMM"* Commit your modification to the repo.
 
 # "Time Machine": *stash*, checkout
@@ -218,10 +218,10 @@ A branch-based development flow:
 # "Time Machine": stash, *checkout*
 *checkout* enable you to go backward and forward in the revision history.
 1. *git checkout COMMITID_OR_TAGNAME* [^commitid]
-2. You are on a *unamed* branch with file status dating back. Do anything you want.
+2. You are on a *unnamed* branch with file status dating back. Do anything you want.
 3. *git checkout master* Come back to master.
 
-[^commitid]: The full commit ID is 40 charaters long. But you may type a short prefix (like 4~6 charaters) to refer to a commit uniquely.
+[^commitid]: The full commit ID is 40 characters long. But you may type a short prefix (like 4~6 characters) to refer to a commit uniquely.
 
 # Exercise: git environment
 <!--- Configure the git environment and create a github account (name, email, SSH key, refer to github's help. Please read github's manual carefully. More things you should know about SSH: public key, private key, passphrase for accessing the 
