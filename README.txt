@@ -1,0 +1,11 @@
+This is the project GitForBeginners. It aims to assist the newbie to learn and use git.
+
+Please read through the [git_beamer.pdf](https://github.com/weijianwen/GitForBeginners/blob/master/git_beamer.pdf) file and finish the exercises at the end of the slides.
+
+Feedback and advice are welcomed. You can write [me](mailto:weijianwen@sjtu.edu.cn) an email or open an issue with the upper-right button.
+
+--------------------
+
+# Draft Area
+
+Write something, please.
