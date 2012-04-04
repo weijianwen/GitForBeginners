@@ -553,16 +553,22 @@ remote, \texttt{push, pull}}
 
 \begin{itemize}
 \item
-  \texttt{git pull REPO\_NAME BRANCH\_NAME}
+  \texttt{git pull REPO\_NAME REMO\_BRANCH}
   \begin{itemize}
   \item
     Merge remote branch's changes into current branch.
   \end{itemize}
 \item
-  \texttt{git push REPO\_NAME BRANCH\_NAME}
+  \texttt{git push REPO\_NAME REMO\_BRANCH}
   \begin{itemize}
   \item
     Push current branch's changes to the remote branch.
+  \end{itemize}
+\item
+  \texttt{git push REPO\_NAME :REMO\_BRANCH}
+  \begin{itemize}
+  \item
+    Delete a remote branch.
   \end{itemize}
 \end{itemize}
 \end{frame}
@@ -659,36 +665,140 @@ history.
 \end{enumerate}
 \end{frame}
 
-\begin{frame}\frametitle{Exercise: git environment}
+\begin{frame}[fragile]\frametitle{Exercise: Set up git environment}
+
+\begin{enumerate}[1.]
+\item
+  Set up git on your computer, and sign up a github account.
+\item
+  Initialize a local project as git repo, make your first git.
+\item
+  Email your SSH public key file as an attachment to
+  \href{mailto:weijianwen@sjtu.edu.cn}{me}. Name your pubkey file after
+  ``YOUR@EMAIL.pub'', e.g., you should rename your \texttt{id\_rsa.pub}
+  to \texttt{xxx@sjtu.edu.cn.pub} and send it to me.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{Exercise: git basics}
+
+Be familiar with \texttt{status}, \texttt{add}, \texttt{commit},
+\texttt{diff}, \texttt{tag}.
 
 \end{frame}
 
-\begin{frame}\frametitle{Exercise: diff}
+\begin{frame}\frametitle{Exercise: Branch-based development}
+
+\begin{enumerate}[1.]
+\item
+  Create a branch.
+\item
+  Checkout to that branch.
+\item
+  Merge the changes into trunk (master).
+\item
+  Delete the branch.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{Exercise: Be social on github}
+
+\begin{enumerate}[1.]
+\item
+  Follow \href{https://github.com/weijianwen}{me} on github.\footnote{Please
+    feel free to unfollow me when finishing all the required exercises.}
+\item
+  I will add you as a collaborator. Please wait for my message on github
+  before preceeding to next setp.
+\item
+  Clone the
+  \href{https://github.com/weijianwen/GitForBeginners}{GitForBeginners}
+  project with Read+Write access.
+\item
+  Write something into the \texttt{README.txt} (DON'T destroy the
+  description header). add, commit, pull, push.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{Exercise: Manage remotes}
+
+\begin{enumerate}[1.]
+\item
+  You clone the remote repo
+  \href{https://github.com/weijianwen/GitForBeginners}{GitForBeginners}
+  on github. Try \texttt{git remote}.
+\item
+  Copy the
+  \href{git@github.com:weijianwen/GitForBeginners.git}{REPO\_URL} to
+  somewhere else.
+\item
+  Delete the remote repo.\footnote{Don't worry. It is just a reference.}
+\item
+  Add the remote repo
+  \href{git@github.com:weijianwen/GitForBeginners.git}{REPO\_URL} with a
+  name you prefer, such as \texttt{myrepo}.
+\item
+  Rename the remote repo to its original name -- \texttt{origin}.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{Exercise: Remote branch}
+
+\begin{enumerate}[1.]
+\item
+  Create a local branch with your full name, such as \texttt{zhangsan}.
+\item
+  Write something into README.txt on the branch. add, commit, pull, push
+  to the remote branch.
+\item
+  Leave the branch on github as a mark of ``I finish the homework''.
+  Please recreate the the remote branch if you've tried the \emph{delete
+  remote branch} command.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{Exercise: Handle conflicts}
+
+\begin{enumerate}[1.]
+\item
+  Clone
+  \href{https://github.com/weijianwen/GitForBeginners}{GitForBeginners}
+  twice into two seperate projects, namely \texttt{proj\_A} and
+  \texttt{proj\_B}.
+\item
+  In proj\_A, modify README.txt. add, commit, pull, push
+\item
+  In proj\_B, modify the \emph{SAME} lines of README.txt as you do in
+  proj\_A. add, commit, pull
+\item
+  A \emph{conflict} towards README.txt arises in proj\_B.
+\item
+  Resolve the conflict, then add, comit, pull, push to github.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{Exercise: Time Machine}
+
+Use \texttt{stash}, \texttt{checkout} to do time travle.
 
 \end{frame}
 
-\begin{frame}\frametitle{Exercise: branch}
+\begin{frame}\frametitle{Recommended Materials for Learning git}
 
-\end{frame}
-
-\begin{frame}\frametitle{Exercise: github}
-
-\end{frame}
-
-\begin{frame}\frametitle{Exercise: Remote Branch}
-
-\end{frame}
-
-\begin{frame}\frametitle{Exercise: Conflicts}
-
-\end{frame}
-
-\begin{frame}\frametitle{Exercise: tag}
-
-\end{frame}
-
-\begin{frame}\frametitle{Exercise: Time Machine}
-
+\begin{itemize}
+\item
+  \href{http://goo.gl/NBGgo}{``Git Tutorials'' by Li Yanrui}
+\item
+  \href{http://help.github.com/}{github:help}
+\item
+  \href{http://progit.org/book/}{Pro Git On line}
+\item
+  \href{http://excess.org/article/2008/07/ogre-git-tutorial/}{Video:
+  ``Git the basics'' by Bart Trojanowski}
+\item
+  \href{http://shop.oreilly.com/product/0636920022862.do}{O'Reilly Book:
+  Version Control With Git, 2nd Edition}
+\end{itemize}
 \end{frame}
 
 \end{document}

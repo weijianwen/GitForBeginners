@@ -224,10 +224,12 @@ A branch-based development flow:
 [^gitremote]: Remote repos in git are just references or pointers, so you lose or gain *nothing* when adding or removing a remote repo.
 
 # Working with **remotes**: clone, remote, ```push, pull```
-  + ```git pull REPO_NAME BRANCH_NAME``` 
+  + ```git pull REPO_NAME REMO_BRANCH``` 
       - Merge remote branch's changes into current branch.
-  + ```git push REPO_NAME BRANCH_NAME``` 
+  + ```git push REPO_NAME REMO_BRANCH``` 
       - Push current branch's changes to the remote branch.
+  + ```git push REPO_NAME :REMO_BRANCH``` 
+      - Delete a remote branch.
 
 # Oh, there is a conflict!!!
   + A conflict looks like:
@@ -273,26 +275,54 @@ A branch-based development flow:
 
 [^commitid]: The full commit ID is 40 characters long. But you may type a short prefix (like 4~6 characters) to refer a commit uniquely.
 
-# Exercise: git environment
-<!--- Configure the git environment and create a github account (name, email, SSH key, refer to github's help. Please read github's manual carefully. More things you should know about SSH: public key, private key, passphrase for accessing the 
+# Exercise: Set up git environment
+1. Set up git on your computer, and sign up a github account.
+2. Initialize a local project as git repo, make your first git. 
+3. Email your SSH public key file as an attachment to [me](mailto:weijianwen@sjtu.edu.cn). Name your pubkey file after "YOUR@EMAIL.pub", e.g., you should rename your ```id_rsa.pub``` to ```xxx@sjtu.edu.cn.pub``` and send it to me.
 
-# Exercise: git local repo
-<!--- Initialize a local project, EDIT, status, add, comiit, try .gitignore file -->
+# Exercise: git basics
+Be familiar with ```status```, ```add```, ```commit```, ```diff```, ```tag```.
 
-# Exercise: diff
+# Exercise: Branch-based development
+1. Create a branch.
+2. Checkout to that branch.
+3. Merge the changes into trunk (master).
+4. Delete the branch.
 
-# Exercise: branch
-<!--- branch Create a new branch, EDIT, merge it into master -->
+# Exercise: Be social on github
+1. Follow [me](https://github.com/weijianwen) on github.^[Please feel free to unfollow me when finishing all the required exercises.]
+2. I will add you as a collaborator. Please wait for my message on github before preceeding to next setp.
+3. Clone the [GitForBeginners](https://github.com/weijianwen/GitForBeginners) project with Read+Write access.
+4. Write something into the ```README.txt``` (DON'T destroy the description header). add, commit, pull, push.
 
-# Exercise: github
-<!--- Create a new repo at github, push a local git repo to it and clone the github repo to other place locally. Hope you feel comfortable with ADD-COMMIT-PUSH-PULL-CLONE commands. -->
+# Exercise: Manage remotes 
+1. You clone the remote repo [GitForBeginners](https://github.com/weijianwen/GitForBeginners) on github. Try ```git remote```.
+2. Copy the [REPO_URL] to somewhere else.
+3. Delete the remote repo.^[Don't worry. It is just a reference.]
+4. Add the remote repo [REPO_URL] with a name you prefer, such as ```myrepo```.
+5. Rename the remote repo to its original name -- ```origin```.
 
-# Exercise: Remote Branch
-<!--- git push GITHUB_URL BRACNNAME;   git push URL :BRANCH;  git merge BRANCH master -->
+[REPO_URL]: git@github.com:weijianwen/GitForBeginners.git
 
-# Exercise: Conflicts
+# Exercise: Remote branch
+1. Create a local branch with your full name, such as ```zhangsan```.
+2. Write something into README.txt on the branch. add, commit, pull, push to the remote branch. 
+3. Leave the branch on github as a mark of "I finish the homework". Please recreate the the remote branch if you've tried the *delete remote branch* command.
 
-# Exercise: tag
+# Exercise: Handle conflicts
+1. Clone [GitForBeginners](https://github.com/weijianwen/GitForBeginners) twice into two seperate projects, namely ```proj_A``` and ```proj_B```.
+2. In proj_A, modify README.txt. add, commit, pull, push
+3. In proj_B, modify the *SAME* lines of README.txt as you do in proj_A. add, commit, pull
+4. A *conflict* towards README.txt arises in proj_B.
+5. Resolve the conflict, then add, comit, pull, push to github.
 
 # Exercise: Time Machine
+Use ```stash```, ```checkout``` to do time travle.
+
+# Recommended Materials for Learning git
+ + ["Git Tutorials" by Li Yanrui](http://goo.gl/NBGgo)
+ + [github:help](http://help.github.com/)
+ + [Pro Git On line](http://progit.org/book/)
+ + [Video: "Git the basics" by Bart Trojanowski](http://excess.org/article/2008/07/ogre-git-tutorial/)
+ + [O'Reilly Book: Version Control With Git, 2nd Edition](http://shop.oreilly.com/product/0636920022862.do)
 
