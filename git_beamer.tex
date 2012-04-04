@@ -26,17 +26,22 @@
 \setlength{\emergencystretch}{3em}  % prevent overfull lines
 \setcounter{secnumdepth}{0}
 
-\title{Learning by Doing\\{}A Short Introduction to git}
+\title[A Short Introduction to git]{Learning by Doing}
+\subtitle{\href{https://github.com/weijianwen/GitForBeginners}{{A Short Introduciton to git}}}
 \author{Jianwen WEI}
+\institute[SJTU]{Shanghai Jiaotong University}
 \date{\today}
 
 \begin{document}
 \frame{\titlepage}
 
-\begin{frame}\frametitle{What does a
-\href{http://en.wikipedia.org/wiki/Revision\_control}{Version Control
-System} do?}
 
+\begin{frame}\frametitle{What does a
+\href{http://en.wikipedia.org/wiki/Revision\_control}{Version Control System} 
+do?}
+
+\begin{columns}
+  \begin{column}{0.7\textwidth}
 \begin{itemize}
 \item
   Track source code
@@ -51,13 +56,21 @@ System} do?}
     branch, merge conflicts, tag\ldots{}
   \end{itemize}
 \end{itemize}
-\begin{figure}[htbp]
+
+ \end{column}
+
+  \begin{column}{0.3\textwidth}
+ \begin{figure}[htbp]
 \centering
-\includegraphics{figures/vcsflow.png}
-\caption{VCS general work flow}
+\includegraphics[width=0.85\textwidth]{figures/vcsflow.png}
+\caption{VCS work flow}
 \end{figure}
+  \end{column}
+\end{columns}
+\bigskip
 
 \end{frame}
+
 
 \begin{frame}\frametitle{VCS Work Flow Categories}
 
@@ -159,8 +172,8 @@ System} do?}
 \end{itemize}
 \begin{figure}[htbp]
 \centering
-\includegraphics{figures/gitstandalone.jpeg}
-\caption{gitalone}
+\includegraphics[width=0.45\textwidth]{figures/gitstandalone.jpeg}
+\caption{git's local work flow}
 \end{figure}
 
 \end{frame}
@@ -178,8 +191,8 @@ System} do?}
 \end{itemize}
 \begin{figure}[htbp]
 \centering
-\includegraphics{figures/gitdvcs.png}
-\caption{gitdvcs}
+\includegraphics[width=0.6\textwidth]{figures/gitdvcs.png}
+\caption{git's distributed work flow}
 \end{figure}
 
 \end{frame}
@@ -187,20 +200,23 @@ System} do?}
 \begin{frame}\frametitle{git's emulation to the centralized work flow
 (\textbf{RECOMMENDED})}
 
-\begin{itemize}
-\item
-  It's \textbf{emulation}, not \emph{real}.\\
-\item
-  The statement, ``all repositories are peers.'', still holds.
-\item
-  We pretend that we see the central repo only, unaware of each other's
-  peer repo.
-\end{itemize}
-\begin{figure}[htbp]
-\centering
-\includegraphics{figures/gitcent.jpeg}
-\caption{gitcent}
-\end{figure}
+\begin{columns}
+	\begin{column}{0.6\textwidth}
+	\begin{itemize}
+	\item It's \textbf{emulation}, not \emph{real}.
+	\item The statement, ``all repositories are peers.'', still holds.
+	\item We pretend that we see the central repo only, unaware of each other's peer repo.
+	\end{itemize}
+	\end{column}
+
+	\begin{column}{0.4\textwidth}
+	\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.9\textwidth]{figures/gitcent.jpeg}
+	\caption{git's centralized work flow for John and Jessica}
+	\end{figure}
+	\end{column}
+\end{columns}
 
 \end{frame}
 
@@ -305,8 +321,8 @@ your repo}
 \end{itemize}
 \begin{figure}[htbp]
 \centering
-\includegraphics{figures/gitlifecycle.png}
-\caption{gitlifecyle}
+\includegraphics[width=0.5\textwidth]{figures/gitlifecycle.png}
+\caption{File Status Lifecycle}
 \end{figure}
 
 \end{frame}
@@ -549,7 +565,7 @@ checkout, \texttt{merge}}
 \end{frame}
 
 \begin{frame}[fragile]\frametitle{Working with \textbf{remotes}: clone,
-remote, \texttt{push, pull}}
+remote, \emph{push, pull}}
 
 \begin{itemize}
 \item
