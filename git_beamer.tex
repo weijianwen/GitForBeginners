@@ -27,7 +27,7 @@
 \setcounter{secnumdepth}{0}
 
 \title[A Short Introduction to git]{Learning by Doing}
-\subtitle{\href{https://github.com/weijianwen/GitForBeginners}{{A Short Introduciton to git}}}
+\subtitle{\href{https://github.com/weijianwen/GitForBeginners}{{A Short Introduction to git}}}
 \author{Jianwen WEI}
 \institute[SJTU]{Shanghai Jiaotong University}
 \date{\today}
@@ -35,6 +35,12 @@
 \begin{document}
 \frame{\titlepage}
 
+\begin{frame}
+       \frametitle{Outline}
+       \tableofcontents
+\end{frame}
+
+\section{What is git?}
 
 \begin{frame}\frametitle{What does a
 \href{http://en.wikipedia.org/wiki/Revision\_control}{Version Control System} 
@@ -148,6 +154,8 @@ do?}
   Write comment to each commit.
 \end{itemize}
 \end{frame}
+
+\section{Learning and USING git}
 
 \begin{frame}\frametitle{To get started, I will\ldots{}}
 
@@ -424,7 +432,7 @@ permanently}
   \texttt{git tag -a TAG\_NAME -M YOUR\_COMMENT}
   \begin{itemize}
   \item
-    Add an anotated tag
+    Add an annotated tag
   \end{itemize}
 \item
   \texttt{git tag -d TAG\_NAME}
@@ -681,6 +689,8 @@ history.
 \end{enumerate}
 \end{frame}
 
+\section{Exercises}
+
 \begin{frame}[fragile]\frametitle{Exercise: Set up git environment}
 
 \begin{enumerate}[1.]
@@ -725,7 +735,7 @@ Be familiar with \texttt{status}, \texttt{add}, \texttt{commit},
     feel free to unfollow me when finishing all the required exercises.}
 \item
   I will add you as a collaborator. Please wait for my message on github
-  before preceeding to next setp.
+  before proceeding to next step.
 \item
   Clone the
   \href{https://github.com/weijianwen/GitForBeginners}{GitForBeginners}
@@ -768,7 +778,7 @@ Be familiar with \texttt{status}, \texttt{add}, \texttt{commit},
   to the remote branch.
 \item
   Leave the branch on github as a mark of ``I finish the homework''.
-  Please recreate the the remote branch if you've tried the \emph{delete
+  Please recreate the remote branch if you've tried the \emph{delete
   remote branch} command.
 \end{enumerate}
 \end{frame}
@@ -779,7 +789,7 @@ Be familiar with \texttt{status}, \texttt{add}, \texttt{commit},
 \item
   Clone
   \href{https://github.com/weijianwen/GitForBeginners}{GitForBeginners}
-  twice into two seperate projects, namely \texttt{proj\_A} and
+  twice into two separate projects, namely \texttt{proj\_A} and
   \texttt{proj\_B}.
 \item
   In proj\_A, modify README.txt. add, commit, pull, push
@@ -789,15 +799,17 @@ Be familiar with \texttt{status}, \texttt{add}, \texttt{commit},
 \item
   A \emph{conflict} towards README.txt arises in proj\_B.
 \item
-  Resolve the conflict, then add, comit, pull, push to github.
+  Resolve the conflict, then add, commit, pull, push to github.
 \end{enumerate}
 \end{frame}
 
 \begin{frame}[fragile]\frametitle{Exercise: Time Machine}
 
-Use \texttt{stash}, \texttt{checkout} to do time travle.
+Use \texttt{stash}, \texttt{checkout} to do time travel.
 
 \end{frame}
+
+\section{Recommended Materials}
 
 \begin{frame}\frametitle{Recommended Materials for Learning git}
 
