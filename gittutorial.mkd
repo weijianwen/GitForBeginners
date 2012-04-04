@@ -275,27 +275,27 @@ A branch-based development flow:
 
 [^commitid]: The full commit ID is 40 characters long. But you may type a short prefix (like 4~6 characters) to refer a commit uniquely.
 
-# Exercise: Set up git environment
+# Exercise 1: Set up git environment
 1. Set up git on your computer, and sign up a github account.
 2. Initialize a local project as git repo, make your first git. 
 3. Email your SSH public key file as an attachment to [me](mailto:weijianwen@sjtu.edu.cn). Name your pubkey file after "YOUR@EMAIL.pub", e.g., you should rename your ```id_rsa.pub``` to ```xxx@sjtu.edu.cn.pub``` and send it to me.
 
-# Exercise: git basics
+# Exercise 2: git basics
 Be familiar with ```status```, ```add```, ```commit```, ```diff```, ```tag```.
 
-# Exercise: Branch-based development
+# Exercise 3: Branch-based development
 1. Create a branch.
 2. Checkout to that branch.
 3. Merge the changes into trunk (master).
 4. Delete the branch.
 
-# Exercise: Be social on github
+# Exercise 4: Be social on github
 1. Follow [me](https://github.com/weijianwen) on github.^[Please feel free to unfollow me when finishing all the required exercises.]
 2. I will add you as a collaborator. Please wait for my message on github before preceeding to next setp.
 3. Clone the [GitForBeginners](https://github.com/weijianwen/GitForBeginners) project with Read+Write access.
 4. Write something into the ```README.txt``` (DON'T destroy the description header). add, commit, pull, push.
 
-# Exercise: Manage remotes 
+# Exercise 5: Manage remotes 
 1. You clone the remote repo [GitForBeginners](https://github.com/weijianwen/GitForBeginners) on github. Try ```git remote```.
 2. Copy the [REPO_URL] to somewhere else.
 3. Delete the remote repo.^[Don't worry. It is just a reference.]
@@ -304,19 +304,19 @@ Be familiar with ```status```, ```add```, ```commit```, ```diff```, ```tag```.
 
 [REPO_URL]: git@github.com:weijianwen/GitForBeginners.git
 
-# Exercise: Remote branch
+# Exercise 6: Remote branch
 1. Create a local branch with your full name, such as ```zhangsan```.
 2. Write something into README.txt on the branch. add, commit, pull, push to the remote branch. 
 3. Leave the branch on github as a mark of "I finish the homework". Please recreate the the remote branch if you've tried the *delete remote branch* command.
 
-# Exercise: Handle conflicts
+# Exercise 7: Handle conflicts
 1. Clone [GitForBeginners](https://github.com/weijianwen/GitForBeginners) twice into two seperate projects, namely ```proj_A``` and ```proj_B```.
 2. In proj_A, modify README.txt. add, commit, pull, push
 3. In proj_B, modify the *SAME* lines of README.txt as you do in proj_A. add, commit, pull
 4. A *conflict* towards README.txt arises in proj_B.
 5. Resolve the conflict, then add, comit, pull, push to github.
 
-# Exercise: Time Machine
+# Exercise 8: Time Machine
 Use ```stash```, ```checkout``` to do time travle.
 
 # Recommended Materials for Learning git
@@ -326,3 +326,7 @@ Use ```stash```, ```checkout``` to do time travle.
  + [Video: "Git the basics" by Bart Trojanowski](http://excess.org/article/2008/07/ogre-git-tutorial/)
  + [O'Reilly Book: Version Control With Git, 2nd Edition](http://shop.oreilly.com/product/0636920022862.do)
 
+# Acknowledgement
+ + The slides is composed with [Markdown](http://daringfireball.net/projects/markdown/) language, and converted to [latex beamer](https://bitbucket.org/rivanvx/beamer/wiki/Home) with [pandoc](http://johnmacfarlane.net/pandoc/).  
+ + [XeTeX](http://www.tug.org/xetex/) is a nice typesetting system. [latexmk](http://www.phys.psu.edu/~collins/software/latexmk-jcc/) helps to hide the complexity of compilation.
+ + The slides, along with the [project](https://github.com/weijianwen/GitForBeginners), is hosted on [github](https://github.com/). 
