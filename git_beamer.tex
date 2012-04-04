@@ -15,6 +15,7 @@
 \fi
 \usepackage{enumerate}
 \usepackage{graphicx}
+\hypersetup{colorlinks=true}
 % Comment these out if you don't want a slide with just the
 % part/section/subsection/subsubsection title:
 \AtBeginPart{\frame{\partpage}}
@@ -257,34 +258,22 @@ do?}
 \begin{frame}\frametitle{git command}
 
 \begin{itemize}
-\item
-  help
-\item
-  init
-\item
-  status
-\item
-  add
-\item
-  commit
-\item
-  diff
-\item
-  tag
-\item
-  Working with branch
-\item
-  Working with remotes
-\item
-  submodule
-\item
-  Oh, there is a conflict!!!
-\item
-  ``Time Machine''
+	\item \hyperlink{githelp}{help}
+	\item \hyperlink{gitinit}{init}
+	\item \hyperlink{gitstatus}{status}
+	\item \hyperlink{gitadd}{add}
+	\item \hyperlink{gitcommit}{commit}
+	\item \hyperlink{gitdiff}{diff}
+	\item \hyperlink{gittag}{tag}
+	\item \hyperlink{gitbranch}{Working with branch}
+	\item \hyperlink{gitremote}{Working with remotes}
+	\item \hyperlink{gitsub}{submodule}
+	\item \hyperlink{giconflict}{Oh, there is a conflict!!!}
+	\item \hyperlink{gittime}{``Time Machine''}
 \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]\frametitle{\texttt{help}: Get help}
+\begin{frame}[fragile, label=githelp]\frametitle{\texttt{help}: Get help}
 
 \texttt{git help COMMAND} Get help from git.
 
@@ -298,7 +287,7 @@ do?}
 \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]\frametitle{\texttt{init}: Initialize a local git
+\begin{frame}[fragile, label=gitinit]\frametitle{\texttt{init}: Initialize a local git
 repo for your project}
 
 \texttt{init} command will create a \texttt{.git} dir on the top level
@@ -312,7 +301,7 @@ of your project.
 \end{enumerate}
 \end{frame}
 
-\begin{frame}[fragile]\frametitle{\texttt{status}: Show the status of
+\begin{frame}[fragile, label=gitstatus]\frametitle{\texttt{status}: Show the status of
 your repo}
 
 \texttt{git status}
@@ -335,7 +324,7 @@ your repo}
 
 \end{frame}
 
-\begin{frame}[fragile]\frametitle{\texttt{add}: A multi-function git
+\begin{frame}[fragile, label=add]\frametitle{\texttt{add}: A multi-function git
 command}
 
 \texttt{git add FILES\_OR\_DIR}
@@ -350,7 +339,7 @@ command}
 \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]\frametitle{commit: Store the status (snapshot)
+\begin{frame}[fragile, label=gitcommit]\frametitle{commit: Store the status (snapshot)
 permanently}
 
 \begin{itemize}
@@ -368,16 +357,20 @@ permanently}
   Each commit is identified by a \textbf{UNIQUE} SHA-1 ID of 40 ASCII
   characters.
 \end{itemize}
+
+{\small
 \begin{verbatim}
      commit dd5f924c40096b9cda27ffd1cfd1205822ab3c70
      Author: Github Support <me@github.com>
      Date:   Sun Apr 1 19:38:37 2012 +0800
 
-        Restart the git-tutorial project.
+     Restart the git-tutorial project.
 \end{verbatim}
+}
+
 \end{frame}
 
-\begin{frame}[fragile]\frametitle{diff: Find differences}
+\begin{frame}[fragile, label=gitdiff]\frametitle{diff: Find differences}
 
 \begin{itemize}
 \item
@@ -407,7 +400,7 @@ permanently}
 \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]\frametitle{tag: A milestone version}
+\begin{frame}[fragile, gittag]\frametitle{tag: A milestone version}
 
 \begin{itemize}
 \item
@@ -455,7 +448,7 @@ permanently}
 \end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Working with \textbf{branch}: branch, checkout,
+\begin{frame}[label=gitbranch]\frametitle{Working with \textbf{branch}: branch, checkout,
 merge}
 
 A branch-based development flow:
@@ -519,7 +512,7 @@ checkout, \texttt{merge}}
 \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]\frametitle{Working with \textbf{remotes}:
+\begin{frame}[fragile, label=gitremote]\frametitle{Working with \textbf{remotes}:
 \texttt{clone}, remote, push, pull}
 
 \begin{itemize}
@@ -597,15 +590,24 @@ remote, \emph{push, pull}}
 \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]\frametitle{Oh, there is a conflict!!!}
+\begin{frame}[fragile, label=gitconflict]\frametitle{Oh, there is a conflict!!!}
 
 \begin{itemize}
 \item
   A conflict looks like:
-\end{itemize}
-\texttt{\textless{}\textless{}\textless{}\textless{}\textless{}\textless{}\textless{} HEAD:index.html \textless{}div id="footer"\textgreater{}contact : email.support@github.com\textless{}/div\textgreater{} ======= \textless{}div id="footer"\textgreater{}   please contact us at support@github.com \textless{}/div\textgreater{} \textgreater{}\textgreater{}\textgreater{}\textgreater{}\textgreater{}\textgreater{}\textgreater{} iss53:index.html}
 
-\begin{itemize}
+{\small
+\begin{verbatim}
+<<<<<<< HEAD:index.html
+<div id="footer">contact : email.support@github.com</div>
+=======
+<div id="footer">
+  please contact us at support@github.com
+</div>
+>>>>>>> iss53:index.html
+\end{verbatim}
+}
+
 \item
   Conflicts arise when git cannot automatically merge changes at
   \texttt{merge} or \texttt{pull} operations.
@@ -631,7 +633,7 @@ resolve, commit}
 \end{enumerate}
 \end{frame}
 
-\begin{frame}[fragile]\frametitle{``Time Machine'': \texttt{stash},
+\begin{frame}[fragile, label=gittime]\frametitle{``Time Machine'': \texttt{stash},
 checkout}
 
 \texttt{stash} saves your temporary work and resets the files to HEAD

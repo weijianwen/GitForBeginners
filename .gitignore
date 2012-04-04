@@ -6,4 +6,4 @@
 *.toc
 *.swp
 .DS_Store
-~.vrb
+*.vrb
