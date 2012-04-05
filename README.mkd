@@ -1,11 +1,35 @@
 This is the project GitForBeginners. It aims to assist the newbie to learn and use git.
 
-Please read through the [git_beamer.pdf](https://github.com/weijianwen/GitForBeginners/blob/master/git_beamer.pdf?raw=true) file and finish the exercises at the end of the slides.
+Sorry I just got too tired to write more words on this README file. Please read through the [git_beamer.pdf](https://github.com/weijianwen/GitForBeginners/blob/master/git_beamer.pdf?raw=true) and finish the exercises.
 
-Feedback and advice are welcomed. You can write [me](mailto:weijianwen@sjtu.edu.cn) an email or open an issue with the upper-right button.
+For the intren students in our lab, please follow me on github (Well, you can unfollow me later). Then *wait* for my message before you preceed to clone the project.
+
+```git clone git@github.com:weijianwen/GitForBeginners.git```   
+
+Limit your modification towards the project to the *Drfat Area (below)* of README.mkd, unless you're sure that what you are doing is a *contribution* to the project.
+
+Feedback is always welcomed. You can open an issue on github (*recommended*) or write [me](mailto:weijianwen@sjtu.edu.cn) an email.
+
+--------------------
+
+# Recommended Materials for Learning git
+ + ["Git Tutorials" by Li Yanrui (Chinese)](http://goo.gl/NBGgo)
+ + [github:help](http://help.github.com/)
+ + [Pro Git On line](http://progit.org/book/)
+ + [Video: "Git the basics" by Bart Trojanowski](http://excess.org/article/2008/07/ogre-git-tutorial/)
+ + [O'Reilly Book: Version Control With Git, 2nd Edition](http://shop.oreilly.com/product/0636920022862.do)
+
+--------------------
+
+# Acknowledgement
+ + The slides are composed with [Markdown](http://daringfireball.net/projects/markdown/) language, and converted to [latex beamer](https://bitbucket.org/rivanvx/beamer/wiki/Home) with [pandoc](http://johnmacfarlane.net/pandoc/).  
+ + [XeTeX](http://www.tug.org/xetex/) is a nice typesetting system. [latexmk](http://www.phys.psu.edu/~collins/software/latexmk-jcc/) helps to hide the complexity of compilation.
+ + The slides, along with the [project](https://github.com/weijianwen/GitForBeginners), are hosted on [github](https://github.com/). 
 
 --------------------
 
 # Draft Area
 
 Write something, please.
+
++ Have a nice day. April 5th, Jianwen

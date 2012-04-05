@@ -263,6 +263,7 @@ do?}
 	\item \hyperlink{gitinit}{init}
 	\item \hyperlink{gitstatus}{status}
 	\item \hyperlink{gitadd}{add}
+	\item \hyperlink{gitignore}{.gitignore}
 	\item \hyperlink{gitcommit}{commit}
 	\item \hyperlink{gitdiff}{diff}
 	\item \hyperlink{gittag}{tag}
@@ -337,6 +338,21 @@ command}
   For unstaged changes: \emph{add} them to the staged area
 \item
   For conflicted files: \emph{add} marks them as ``resolved''
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile, label=gitignore]\frametitle{\texttt{.gitignore}: Ignore files}
+\begin{itemize}
+	\item Specify file types to ignore in \texttt{.gitignore} (a normal text file)
+		\begin{itemize}
+			\item \texttt{*.tmp} (Ignore all *.tmp files)
+			\item \texttt{*.bak} (Ignore all *.bak files)
+	       	\end{itemize}
+	\item git has an internal \texttt{.gitignore}. You can ask git NOT to ignore some file types in \texttt{.gitignore} 
+		\begin{itemize}
+			\item \texttt{!*.o} (\emph{Don't} ignore *.o files)
+	       	\end{itemize}
+	\item \texttt{git help gitignore}
 \end{itemize}
 \end{frame}
 
@@ -624,9 +640,12 @@ remote, \emph{push, pull}}
 resolve, commit}
 
 \begin{enumerate}[1.]
-\item
-  You have to edit the conflicted files, merge conflicts MANUALLY.
-  \texttt{diff} command may help you.
+\item You can
+  \begin{itemize}
+	  \item Merge the conflicts \emph{manually} \texttt{diff} can help you. Or
+	  \item \texttt{git checkout --theirs FILES} Replace the conflicted files with \emph{theirs}.
+	  \item \texttt{git checkout --ours FILES} Replace the conflicted files with \emph{ours}.
+  \end{itemize}
 \item
   \texttt{git add CONFLICT\_FILES} Mark the file as resolved.
 \item
@@ -836,7 +855,7 @@ Use \texttt{stash}, \texttt{checkout} to do time travel.
 
 \begin{itemize}
 \item
-  The slides is composed with
+  The slides are composed with
   \href{http://daringfireball.net/projects/markdown/}{Markdown}
   language, and converted to
   \href{https://bitbucket.org/rivanvx/beamer/wiki/Home}{latex beamer}
@@ -847,7 +866,7 @@ Use \texttt{stash}, \texttt{checkout} to do time travel.
   helps to hide the complexity of compilation.
 \item
   The slides, along with the
-  \href{https://github.com/weijianwen/GitForBeginners}{project}, is
+  \href{https://github.com/weijianwen/GitForBeginners}{project}, are
   hosted on \href{https://github.com/}{github}.
 \item
   Feedback is always welcomed. Write

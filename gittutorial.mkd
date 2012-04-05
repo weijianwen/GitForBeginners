@@ -136,6 +136,14 @@
   + For unstaged changes: *add* them to the staged area
   + For conflicted files: *add* marks them as "resolved"
 
+# ```.gitignore```: Ignore files
+ + Specify file types to ignore in .gitignore (a normal text file)
+     - ```.tmp``` (Ignore all *.tmp files)
+     - ```.bak``` (Ignore all *.bak files)
+ + git has an internal ```.gitignore```. You can ask git NOT to ignore some file types in ```.gitignore```
+     - ```!*.o``` (*Don't* ignore *.o files)
+ + ```git help gitignore```
+
 # commit: Store the status (snapshot) permanently
   + ```git commit -m "YOUR_COMMENT"```
       + ```git commit``` Stores the STAGED changes only
@@ -327,7 +335,7 @@ Use ```stash```, ```checkout``` to do time travle.
  + [O'Reilly Book: Version Control With Git, 2nd Edition](http://shop.oreilly.com/product/0636920022862.do)
 
 # Acknowledgement
- + The slides is composed with [Markdown](http://daringfireball.net/projects/markdown/) language, and converted to [latex beamer](https://bitbucket.org/rivanvx/beamer/wiki/Home) with [pandoc](http://johnmacfarlane.net/pandoc/).  
+ + The slides are composed with [Markdown](http://daringfireball.net/projects/markdown/) language, and converted to [latex beamer](https://bitbucket.org/rivanvx/beamer/wiki/Home) with [pandoc](http://johnmacfarlane.net/pandoc/).  
  + [XeTeX](http://www.tug.org/xetex/) is a nice typesetting system. [latexmk](http://www.phys.psu.edu/~collins/software/latexmk-jcc/) helps to hide the complexity of compilation.
  + The slides, along with the [project](https://github.com/weijianwen/GitForBeginners), is hosted on [github](https://github.com/). 
  + Feedback is always welcomed. Write [me](mailto:weijianwen@sjtu.edu.cn) or open an issue on the [project](https://github.com/weijianwen/GitForBeginners) homepage.
