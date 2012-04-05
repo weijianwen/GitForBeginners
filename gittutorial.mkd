@@ -195,22 +195,32 @@ A branch-based development flow:
  4. Merge branch's changes into trunk.
 
 # Working with **branch**: ```branch```, checkout, merge
-  + ```git branch``` See all the branches
-  + ```git branch BRANCH_NAME``` Create a branch
-  + ```git branch -d BRANCH_NAME``` Delete a branch
-  + ```git branch -D BRANCH_NAME``` Force delete a branch
+  + ```git branch``` 
+      - See all the branches
+  + ```git branch BRANCH_NAME``` 
+      - Create a branch
+  + ```git branch -d BRANCH_NAME``` 
+      - Delete a branch
+  + ```git branch -D BRANCH_NAME``` 
+      - Force delete a branch
 
 # Working with **branch**: branch, ```checkout```, merge
-  + ```git checkout BRANCH_NAME``` Switch to a branch. The working files will change.[^termcheckout]
-  + ```git checkout -f BRANCH_NAME``` Force switch to a branch 
-  + ```git checkout master``` Go back to trunk, named *master* in git.
-  + ```git checkout -b BRANCH_NAME``` Create a branch then switch to it.
+  + ```git checkout BRANCH_NAME``` 
+  	- Switch to a branch. The working files will change.[^termcheckout]
+  + ```git checkout -f BRANCH_NAME``` 
+  	- Force switch to a branch 
+  + ```git checkout master``` 
+  	- Go back to trunk, named *master* in git.
+  + ```git checkout -b BRANCH_NAME``` 
+  	- Create a branch then switch to it.
 
 [^termcheckout]: Don't confuse git's term ```checkout``` here with Subversion's checkout.
 
 # Working with **branch**: branch, checkout, ```merge```
-  + ```git merge BRANCH_A BRANCH_B``` Merge branch_a's and branch_b's changes into *current* branch
-  + ```git checkout master, git merge master BRANCH_NAME``` Merge changes into trunk, the master branch.
+  + ```git merge BRANCH_A BRANCH_B``` 
+  	- Merge branch_a's and branch_b's changes into *current* branch
+  + ```git checkout master, git merge master BRANCH_NAME``` 
+  	- Merge changes into trunk, the master branch.
 
 # Working with **remotes**: ```clone```, remote, push, pull
   + ```git clone REPO_URL``` Full clone of a repo.
@@ -301,7 +311,7 @@ Be familiar with ```status```, ```add```, ```commit```, ```diff```, ```tag```.
 1. Follow [me](https://github.com/weijianwen) on github.^[Please feel free to unfollow me when finishing all the required exercises.]
 2. I will add you as a collaborator. Please wait for my message on github before preceeding to next setp.
 3. Clone the [GitForBeginners](https://github.com/weijianwen/GitForBeginners) project with Read+Write access.
-4. Write something into the ```README.txt``` (DON'T destroy the description header). add, commit, pull, push.
+4. Write something into the ```README.mkdg``` (DON'T destroy the description header). add, commit, pull, push.
 
 # Exercise 5: Manage remotes 
 1. You clone the remote repo [GitForBeginners](https://github.com/weijianwen/GitForBeginners) on github. Try ```git remote```.
@@ -314,14 +324,14 @@ Be familiar with ```status```, ```add```, ```commit```, ```diff```, ```tag```.
 
 # Exercise 6: Remote branch
 1. Create a local branch with your full name, such as ```zhangsan```.
-2. Write something into README.txt on the branch. add, commit, pull, push to the remote branch. 
+2. Write something into README.mkdg on the branch. add, commit, pull, push to the remote branch. 
 3. Leave the branch on github as a mark of "I finish the homework". Please recreate the the remote branch if you've tried the *delete remote branch* command.
 
 # Exercise 7: Handle conflicts
 1. Clone [GitForBeginners](https://github.com/weijianwen/GitForBeginners) twice into two seperate projects, namely ```proj_A``` and ```proj_B```.
-2. In proj_A, modify README.txt. add, commit, pull, push
-3. In proj_B, modify the *SAME* lines of README.txt as you do in proj_A. add, commit, pull
-4. A *conflict* towards README.txt arises in proj_B.
+2. In proj_A, modify README.mkdg. add, commit, pull, push
+3. In proj_B, modify the *SAME* lines of README.mkdg as you do in proj_A. add, commit, pull
+4. A *conflict* towards README.mkdg arises in proj_B.
 5. Resolve the conflict, then add, comit, pull, push to github.
 
 # Exercise 8: Time Machine

@@ -487,13 +487,28 @@ A branch-based development flow:
 
 \begin{itemize}
 \item
-  \texttt{git branch} See all the branches
+  \texttt{git branch} 
+   \begin{itemize}
+	   \item See all the branches
+   \end{itemize}
 \item
-  \texttt{git branch BRANCH\_NAME} Create a branch
+  \texttt{git branch BRANCH\_NAME} 
+   \begin{itemize}
+   \item
+     Create a branch
+   \end{itemize}
 \item
   \texttt{git branch -d BRANCH\_NAME} Delete a branch
+   \begin{itemize}
+   \item
+     Delete a branch
+   \end{itemize}
 \item
   \texttt{git branch -D BRANCH\_NAME} Force delete a branch
+   \begin{itemize}
+   \item
+     Force delete a branch
+   \end{itemize}
 \end{itemize}
 \end{frame}
 
@@ -502,17 +517,31 @@ A branch-based development flow:
 
 \begin{itemize}
 \item
-  \texttt{git checkout BRANCH\_NAME} Switch to a branch. The working
-  files will change.\footnote{Don't confuse git's term \texttt{checkout}
-    here with Subversion's checkout.}
+  \texttt{git checkout BRANCH\_NAME} 
+   \begin{itemize}
+   \item
+     Switch to a branch. The working files will change.\footnote{Don't
+       confuse git's term \texttt{checkout} here with Subversion's
+       checkout.}
+   \end{itemize}
 \item
-  \texttt{git checkout -f BRANCH\_NAME} Force switch to a branch
+  \texttt{git checkout -f BRANCH\_NAME} 
+   \begin{itemize}
+   \item
+     Force switch to a branch
+   \end{itemize}
 \item
-  \texttt{git checkout master} Go back to trunk, named \emph{master} in
-  git.
+  \texttt{git checkout master}
+   \begin{itemize}
+   \item
+     Go back to trunk, named \emph{master} in git.
+   \end{itemize}
 \item
-  \texttt{git checkout -b BRANCH\_NAME} Create a branch then switch to
-  it.
+  \texttt{git checkout -b BRANCH\_NAME} 
+   \begin{itemize}
+   \item
+     Create a branch then switch to it.
+   \end{itemize}
 \end{itemize}
 \end{frame}
 
@@ -521,11 +550,17 @@ checkout, \texttt{merge}}
 
 \begin{itemize}
 \item
-  \texttt{git merge BRANCH\_A BRANCH\_B} Merge branch\_a's and
-  branch\_b's changes into \emph{current} branch
+  \texttt{git merge BRANCH\_A BRANCH\_B} 
+   \begin{itemize}
+   \item
+     Merge branch\_a's and branch\_b's changes into \emph{current} branch
+   \end{itemize}
 \item
-  \texttt{git checkout master, git merge master BRANCH\_NAME} Merge
-  changes into trunk, the master branch.
+  \texttt{git checkout master, git merge master BRANCH\_NAME} 
+   \begin{itemize}
+   \item
+     Merge changes into trunk, the master branch.
+   \end{itemize}
 \end{itemize}
 \end{frame}
 
