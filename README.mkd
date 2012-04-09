@@ -36,10 +36,8 @@ Write something, please.
 + Hello World. April 8th, bowen  
 + Hello World too. April 8th, LeeAbner
 + GOT IT! April 8th, Otto Mao
-<<<<<<< HEAD
-
-=======
 It's rainy,today.April 9th.Rong Renyuan	
 new branch by rongrenyuan
->>>>>>> 2db84f866fa46f054b0e6aec2808cff7b32d6e76
+试试中文..这里可以版聊了.. , April 9th, Otto Mao
+我好像改的墨墨迹迹的了。。April 9 th,Rongrenyuan
 
