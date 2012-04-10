@@ -44,11 +44,13 @@
 
 #  Rules of Thumb for git
    + "A clear development flow is worth thousands of VCSs." 
+   + One repo for one project. Use ```submodule``` to organize super projects.
    + Modular design, avoid simultaneous source file editing by different members.
    + Head version at trunk is always ready to deploy.
    + Modification is made on branches, then merged into trunk.
    + Stay on your own branch.
    + Write comment to each commit.
+
 
 # To get started, I will...
   + Illustrate git's various work flows.
@@ -234,10 +236,12 @@ A branch-based development flow:
       - Show the repo's details.
   + ```git remote add REPO_NAME REPO_URL``` 
       - Add a remote repo to tracked list.
-  + ```git remote -d REPO_NAME``` 
+  + ```git remote rm REPO_NAME``` 
       - Remove a remote repo from the tracked list. 
   + ```git remote rename REPO_OLD REPO_NEW``` 
       - Rename a repo.
+  + ```git help remote```
+      - Show ```remote``` help doc
 
 [^gitremote]: Remote repos in git are just references or pointers, so you lose or gain *nothing* when adding or removing a remote repo.
 
