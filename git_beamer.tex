@@ -70,7 +70,7 @@ do?}
   \begin{column}{0.3\textwidth}
  \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.85\textwidth]{figures/vcsflow.png}
+\includegraphics[width=0.8\textwidth]{figures/vcsflow.png}
 \caption{VCS work flow}
 \end{figure}
   \end{column}
@@ -146,6 +146,9 @@ do?}
 \item
   Modular design, avoid simultaneous source file editing by different
   members.
+\item
+  One repo for one project. Use \texttt{submodule} to organize super
+  projects.
 \item
   Head version at trunk is always ready to deploy.
 \item
@@ -603,7 +606,7 @@ checkout, \texttt{merge}}
     Add a remote repo to tracked list.
   \end{itemize}
 \item
-  \texttt{git remote -d REPO\_NAME}
+  \texttt{git remote rm REPO\_NAME}
   \begin{itemize}
   \item
     Remove a remote repo from the tracked list.
@@ -614,6 +617,12 @@ checkout, \texttt{merge}}
   \item
     Rename a repo.
   \end{itemize}
+\item
+  \texttt{git help remote}
+  \begin{itemize}
+     \item Show \texttt{remote} help doc
+  \end{itemize}
+
 \end{itemize}
 \end{frame}
 
