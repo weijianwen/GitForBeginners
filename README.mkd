@@ -52,3 +52,4 @@ Write something, please.
 + a new branch "gongwenjuan". April 11th, Gong Wenjuan
 + hello world. April 11th, chenxm
 + hello new branch. April 11th . chenxm
++ git sucks. April 11th. Brian
