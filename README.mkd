@@ -37,7 +37,7 @@ Write something, please.
 + Hello World too. April 8th, LeeAbner
 + GOT IT! April 8th, Otto Mao
 + Hello World, April 11th, Liumuqing
-+ Hello World, April 12th,Duyue
++ Hello World, April 11th,Duyue
 
 
 It's rainy,today.April 9th.Rong Renyuan	
