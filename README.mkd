@@ -1,10 +1,10 @@
-This is the project GitForBeginners. It aims to assist the newbie to learn and use git.
+﻿This is the project GitForBeginners. It aims to assist the newbie to learn and use git.
 
 Sorry I just got too tired to write more words on this README file. Please read through the [git_beamer.pdf](https://github.com/weijianwen/GitForBeginners/blob/master/git_beamer.pdf?raw=true) and finish the exercises.
 
 For the intren students in our lab, please follow me on github (Well, you can unfollow me later). Then *wait* for my message before you preceed to clone the project.
 
-```git clone git@github.com:weijianwen/GitForBeginners.git```   
+```git clone git@github.com:weijianwen/GitForBeginners.git```
 
 Limit your modification towards the project to the *Drfat Area (below)* of README.mkd, unless you're sure that what you are doing is a *contribution* to the project.
 
@@ -22,9 +22,9 @@ Feedback is always welcomed. You can open an issue on github (*recommended*) or 
 --------------------
 
 # Acknowledgement
- + The slides are composed with [Markdown](http://daringfireball.net/projects/markdown/) language, and converted to [latex beamer](https://bitbucket.org/rivanvx/beamer/wiki/Home) with [pandoc](http://johnmacfarlane.net/pandoc/).  
+ + The slides are composed with [Markdown](http://daringfireball.net/projects/markdown/) language, and converted to [latex beamer](https://bitbucket.org/rivanvx/beamer/wiki/Home) with [pandoc](http://johnmacfarlane.net/pandoc/).
  + [XeTeX](http://www.tug.org/xetex/) is a nice typesetting system. [latexmk](http://www.phys.psu.edu/~collins/software/latexmk-jcc/) helps to hide the complexity of compilation.
- + The slides, along with the [project](https://github.com/weijianwen/GitForBeginners), are hosted on [github](https://github.com/). 
+ + The slides, along with the [project](https://github.com/weijianwen/GitForBeginners), are hosted on [github](https://github.com/).
 
 --------------------
 
@@ -33,15 +33,12 @@ Feedback is always welcomed. You can open an issue on github (*recommended*) or 
 Write something, please.
 
 + Have a nice day. April 5th, Jianwen
-+ Hello World. April 8th, bowen  
++ Hello World. April 8th, bowen
 + Hello World too. April 8th, LeeAbner
 + GOT IT! April 8th, Otto Mao
 + Hello World, April 11th, Liumuqing
 + Hello World, April 12th,Duyue
-+ It's rainy,today.April 9th.Rong Renyuan	
-- It's <b>Otto</b>'s practice of [markdown](http://daringfireball.net/projects/markdown/) language and mixed HTML
-- It's rainy,today.April 9th.Rong Renyuan	
-+ new branch by rongrenyuan
-+ �Һ����ĵ�īī�������ˡ���April 9 th,Rongrenyuan
++ It's rainy,today.April 9th.Rong Renyuan
++ new branch by rongrenyuan 我好像改的墨墨迹迹的了。。April 9 th,Rongrenyuan
 + Hello World. April 9, Tank
 
