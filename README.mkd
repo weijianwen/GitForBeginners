@@ -37,7 +37,6 @@ Write something, please.
 + Hello World too. April 8th, LeeAbner
 + GOT IT! April 8th, Otto Mao
 + Hello World, April 11th, Liumuqing
-<<<<<<< HEAD
 + Hello World, April 11th,Duyue
 
 
@@ -46,10 +45,14 @@ It's rainy,today.April 9th.Rong Renyuan
 - It's rainy,today.April 9th.Rong Renyuan	
 new branch by rongrenyuan
 �Һ���ĵ�īī�������ˡ���April 9 th,Rongrenyuan
-=======
+
 + Hello World, April 12th,Duyue
 + It's rainy,today.April 9th.Rong Renyuan
 + new branch by rongrenyuan 我好像改的墨墨迹迹的了。。April 9 th,Rongrenyuan
  1d226c1101e17a96ae43ddc5dc3e82651f25d153
 + Hello World. April 9, Tank
-i'll have a test later...April 11th,DUyue
+
++i'll have a test later...April 11th,DUyue
+
++ hello everybody. April 11th, napu
+
