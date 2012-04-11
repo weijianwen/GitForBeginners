@@ -53,4 +53,4 @@ Write something, please.
 + hello world. April 11th, chenxm
 + hello new branch. April 11th . chenxm
 + git sucks. April 11th. Brian
-+ WO XI HUAN MO GEN. andy
++ WO XI HUAN andy
