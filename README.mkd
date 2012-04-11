@@ -1,4 +1,4 @@
-﻿This is the project GitForBeginners. It aims to assist the newbie to learn and use git.
+This is the project GitForBeginners. It aims to assist the newbie to learn and use git.
 
 Sorry I just got too tired to write more words on this README file. Please read through the [git_beamer.pdf](https://github.com/weijianwen/GitForBeginners/blob/master/git_beamer.pdf?raw=true) and finish the exercises.
 
@@ -38,19 +38,13 @@ Write something, please.
 + GOT IT! April 8th, Otto Mao
 + Hello World, April 11th, Liumuqing
 + Hello World, April 11th,Duyue
-
-
-It's rainy,today.April 9th.Rong Renyuan	
-- It's <b>Otto</b>'s practice of [markdown](http://daringfireball.net/projects/markdown/) language and mixed HTML
-- It's rainy,today.April 9th.Rong Renyuan	
-new branch by rongrenyuan
-�Һ���ĵ�īī�������ˡ���April 9 th,Rongrenyuan
+- It's <b>Otto</b>'s practice of [markdown](http://daringfireball.net/projects/markdown/)  language and mixed HTML
+- It's rainy,today. April 9th. **Rong Renyuan**	
+> [new branch][1] by `rongrenyuan`
+[1]: https://github.com/weijianwen/GitForBeginners/branches/rongrenyuan
 
 + Hello World, April 12th,Duyue
-+ It's rainy,today.April 9th.Rong Renyuan
-+ new branch by rongrenyuan 我好像改的墨墨迹迹的了。。April 9 th,Rongrenyuan
- 1d226c1101e17a96ae43ddc5dc3e82651f25d153
 + Hello World. April 9, Tank
 + I have forked a new branch! By zhaoyusu
-+i'll have a test later...April 11th,DUyue
++ i'll have a test later...April 11th,DUyue
 + hello everybody. April 11th, napu
