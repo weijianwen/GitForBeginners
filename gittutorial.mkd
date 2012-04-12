@@ -311,10 +311,10 @@ Be familiar with ```status```, ```add```, ```commit```, ```diff```, ```tag```.
 4. Delete the branch.
 
 # Exercise 4: Be social on github
-1. Follow [me](https://github.com/weijianwen) on github.^[Please feel free to unfollow me when finishing all the required exercises.]
+1. Open an issue in [GitForBeginners](https://github.com/weijianwen/GitForBeginners) to say hello.
 2. I will add you as a collaborator. Please wait for my message on github before preceeding to next setp.
 3. Clone the [GitForBeginners](https://github.com/weijianwen/GitForBeginners) project with Read+Write access.
-4. Write something into the ```README.mkdg``` (DON'T destroy the description header). add, commit, pull, push.
+4. Write something into the ```README.mkd``` (DON'T destroy the description header). add, commit, pull, push.
 
 # Exercise 5: Manage remotes 
 1. You clone the remote repo [GitForBeginners](https://github.com/weijianwen/GitForBeginners) on github. Try ```git remote```.
