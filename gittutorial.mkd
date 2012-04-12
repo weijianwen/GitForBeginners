@@ -300,7 +300,6 @@ A branch-based development flow:
 # Exercise 1: Set up git environment
 1. Set up git on your computer, and sign up a github account.
 2. Initialize a local project as git repo, make your first git. 
-3. Email your SSH public key file as an attachment to [me](mailto:weijianwen@sjtu.edu.cn). Name your pubkey file after "YOUR@EMAIL.pub", e.g., you should rename your ```id_rsa.pub``` to ```xxx@sjtu.edu.cn.pub``` and send it to me.
 
 # Exercise 2: git basics
 Be familiar with ```status```, ```add```, ```commit```, ```diff```, ```tag```.
