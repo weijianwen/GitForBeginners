@@ -63,5 +63,4 @@ Write something, please.
 + Hello another git conflict world, April 12th, crayon_z
 + Here is a conflict
 + Here is another conflict
-
-My Chinese name is Zhao Yang and you can call me masonvincent.I have to admit that git makes me completely confusing at the very beginning.However,after some training I find myself intrigued,but I still have a long way to go.So cheer up!
++ Hello World.April 14th Zhao Yang
