@@ -68,3 +68,4 @@ Write something, please.
 + Sorry,I am late.April 16th by Xing Jianan
 + I am so late to do this,Xing Jianan
 + I am liuyukun,I am doing the exercise 4 of GitForBeginners
++ I am liuyukun,I am doing the exercise 6 of GitForBeginners
