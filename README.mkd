@@ -70,3 +70,4 @@ Write something, please.
 + I am liuyukun,I am doing the exercise 4 of GitForBeginners
 + I am liuyukun,I am doing the exercise 6 of GitForBeginners
 + yyj again
++ Exercises 7,yyj
