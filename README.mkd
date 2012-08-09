@@ -74,3 +74,4 @@ Write something, please.
 + mark for ex4. 2012.7.24 by CYP
 + test conflict...
 + exercise4,masai
++ exercise6 masai11
