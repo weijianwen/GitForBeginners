@@ -81,4 +81,4 @@ Write something, please.
 + wangyaoxuan.guim
 + in 'wangyaoxuan' branch
 + wangyaoxuan:homework is finished. 
-+ wangyaoxuan:proj_A testing..
++ wangyaoxuan:proj_A testing.. /proj_B testing..
