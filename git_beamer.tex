@@ -790,7 +790,25 @@ Be familiar with \texttt{status}, \texttt{add}, \texttt{commit},
 \end{enumerate}
 \end{frame}
 
-\begin{frame}[fragile]\frametitle{Exercise 4: Be social on github}
+\begin{frame}[fragile]\frametitle{Exercise 4: Handle conflicts}
+
+\begin{enumerate}[1.]
+\item
+  Create a local branch called \texttt{brA}, modify a text file.
+\item
+  Create a local branch called \texttt{brB}, modify the text file on the same line as \texttt{brA}.
+\item
+  Merge \texttt{brA} into \texttt{master}, then merge \texttt{brB} into \texttt{master}. So a conflict arises.
+\item
+  Resolve the conflict, then add, commit.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{Exercise 5: Time Machine}
+Use \texttt{stash}, \texttt{checkout} to do time travel.
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{Exercise 6: Fork --- Be social on github}
 
 \begin{enumerate}[1.]
 \item
@@ -798,79 +816,41 @@ Be familiar with \texttt{status}, \texttt{add}, \texttt{commit},
   \href{https://github.com/weijianwen/GitForBeginners/issues}{GitForBeginners}
   to say hello.
 \item
-  I will add you as a collaborator. Please wait for my message on github
-  before proceeding to next step.
+  Fork 
+  \href{https://github.com/weijianwen/GitForBeginners/issues}{GitForBeginners}.
 \item
-  Clone the
-  \href{https://github.com/weijianwen/GitForBeginners}{GitForBeginners}
-  project with Read+Write access.
-\item
-  Write something into the \texttt{README.mkd} (DON'T destroy the
-  description header). add, commit, pull, push.
+  Now go to your github homepage, you will find a clone of \texttt{GitForBeginnerss} there.
 \end{enumerate}
 \end{frame}
 
-\begin{frame}[fragile]\frametitle{Exercise 5: Manage remotes}
-
+\begin{frame}[fragile]\frametitle{Exercise 7: Manage remotes}
 \begin{enumerate}[1.]
 \item
-  You clone the remote repo
-  \href{https://github.com/weijianwen/GitForBeginners}{GitForBeginners}
-  on github. Try \texttt{git remote}.
+  Clone \emph{your} \texttt{GitForBeginners}.
 \item
-  Copy the
-  \href{git@github.com:weijianwen/GitForBeginners.git}{REPO\_URL} to
-  somewhere else.
+  Run \texttt{git remote -v} to show the remote repo aliases.
 \item
-  Delete the remote repo.\footnote{Don't worry. It is just a reference.}
+  Run \texttt{git remote rename origin NAME\_YOU\_LIKE} to rename the repo alias.
 \item
-  Add the remote repo
-  \href{git@github.com:weijianwen/GitForBeginners.git}{REPO\_URL} with a
-  name you prefer, such as \texttt{myrepo}.
-\item
-  Rename the remote repo to its original name -- \texttt{origin}.
+  Run \\
+  \texttt{git remote add upstream \ git@github.com:weijianwen/GitForBeginners.git} \\
+  to add a repo alias named \texttt{upstream}.
 \end{enumerate}
 \end{frame}
 
-\begin{frame}[fragile]\frametitle{Exercise 6: Remote branch}
-
+\begin{frame}[fragile]\frametitle{Exercise 8: Remote branch on github}
 \begin{enumerate}[1.]
 \item
   Create a local branch with your full name, such as \texttt{zhangsan}.
 \item
-  Write something into README.mkd on the branch. add, commit, pull, push
-  to the remote branch.
-\item
-  Leave the branch on github as a mark of ``I finish the homework''.
-  Please recreate the remote branch if you've tried the \emph{delete
-  remote branch} command.
+  Swith to that branch, write something into README.mkd. Then push this branch to your github repo.
 \end{enumerate}
 \end{frame}
 
-\begin{frame}[fragile]\frametitle{Exercise 7: Handle conflicts}
+\begin{frame}[fragile]\frametitle{Exercise 9: The final challenge: A merge request}
+  Send me a merge request on github. That is, ask me to merge from your \texttt{YOUR\_NAME} branch in your \texttt{GitForBeginners} repo, into the \texttt{master} branch in my \texttt{GitForBeginners} repo.
 
-\begin{enumerate}[1.]
-\item
-  Clone
-  \href{https://github.com/weijianwen/GitForBeginners}{GitForBeginners}
-  twice into two separate projects, namely \texttt{proj\_A} and
-  \texttt{proj\_B}.
-\item
-  In proj\_A, modify README.mkd. add, commit, pull, push
-\item
-  In proj\_B, modify the \emph{SAME} lines of README.mkd as you do in
-  proj\_A. add, commit, pull
-\item
-  A \emph{conflict} towards README.mkd arises in proj\_B.
-\item
-  Resolve the conflict, then add, commit, pull, push to github.
-\end{enumerate}
-\end{frame}
-
-\begin{frame}[fragile]\frametitle{Exercise 8: Time Machine}
-
-Use \texttt{stash}, \texttt{checkout} to do time travel.
-
+  Congratulations! You will get your gitlab account after this challenge. Please check your mailbox.
 \end{frame}
 
 \section{Recommended Materials}
