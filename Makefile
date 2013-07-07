@@ -5,10 +5,10 @@ VIEWER = open
 
 all: $(MAIN).pdf
 
-$(MAIN).tex :
+%.tex : %.mkd Makefile
 	# pandoc gittutorial.mkd --standalone -f markdown -t beamer -o $TEXFILE -V author='Jianwen WEI' -V fontsize=11pt -V theme=Boadilla -V title='Learning by Doing\\{}A Short I    ntroduction to git' -V date='\today'
 
-$(MAIN).pdf : $(MAIN).tex
+%.pdf : %.tex Makefile
 	-@latexmk -silent -f -pdf $*
 	
 view : $(MAIN).pdf
