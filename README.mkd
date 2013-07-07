@@ -52,34 +52,3 @@ Write something, please.
 + a new branch "gongwenjuan". April 11th, Gong Wenjuan
 + hello world. April 11th, chenxm
 + hello new branch. April 11th . chenxm
-+ git sucks. April 11th. Brian
-+ WO XI HUAN hehe   andy
-+ I am zhao xuan chen,hello!!!!
-+ hello word!done
-+ I am wanghaiyang. Hello world.
-+ something= - --jimmyxu
-+ remote branch wanghaiyang
-+ Hello git world, April 12th, crayon_z
-+ Hello another git conflict world, April 12th, crayon_z
-+ Here is a conflict
-+ Here is another conflict
-+ Hello World.April 14th Zhao Yang
-+ Sth -- by JackWindows 2
-+ Sorry,I am late.April 16th by Xing Jianan
-+ I am so late to do this,Xing Jianan
-+ I am liuyukun,I am doing the exercise 4 of GitForBeginners
-+ I am liuyukun,I am doing the exercise 6 of GitForBeginners
-+ yyj again
-+ Exercises 7,yyj
-+ mark for ex4. 2012.7.24 by CYP
-+ test conflict...
-+ exercise4,masai
-+ exercise6 masai11
-+ conflicts??masai
-+ masai branch merge
-+ qiangsiwei testing
-+ wangyaoxuan.guim
-+ in 'wangyaoxuan' branch
-+ wangyaoxuan:homework is finished. 
-+ wangyaoxuan:proj_A testing..
-+ wangyaoxuan:proj_B testing..(resolved)
