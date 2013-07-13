@@ -1,3 +1,5 @@
+email address:lyk9311@gmail.com
+
 This is the project GitForBeginners. It aims to assist the newbie to learn and use git.
 
 Sorry I just got too tired to write more words on this README file. Please read through the [git_beamer.pdf](https://github.com/weijianwen/GitForBeginners/blob/master/git_beamer.pdf?raw=true) and finish the exercises.
