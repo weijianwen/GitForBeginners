@@ -31,7 +31,7 @@ Feedback is always welcomed. You can open an issue on github (*recommended*) or 
 # Draft Area
 
 Write something, please.
-
++ Have a nice summer vacation. Yansong
 + Have a nice day. April 5th, Jianwen
 + Hello World. April 8th, bowen
 + Hello World too. April 8th, LeeAbner
