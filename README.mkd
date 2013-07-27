@@ -32,7 +32,7 @@ Feedback is always welcomed. You can open an issue on github (*recommended*) or 
 # Draft Area
 
 Write something, please.
-fine,July 27th,guangsheng
++ fine,July 27th,guangsheng
 + Have a nice summer vacation. June 15th, Yansong
 + Have a nice day. April 5th, Jianwen
 + Hello World. April 8th, bowen
