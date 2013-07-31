@@ -1,3 +1,4 @@
+
 This is the project GitForBeginners. It aims to assist the newbie to learn and use git.
 
 Sorry I just got too tired to write more words on this README file. Please read through the [git_beamer.pdf](https://github.com/weijianwen/GitForBeginners/blob/master/git_beamer.pdf?raw=true) and finish the exercises.
@@ -31,6 +32,7 @@ Feedback is always welcomed. You can open an issue on github (*recommended*) or 
 # Draft Area
 
 Write something, please.
++ fine,July 27th,guangsheng
 + Have a nice summer vacation. June 15th, Yansong
 + Have a nice day. April 5th, Jianwen
 + Hello World. April 8th, bowen
@@ -43,7 +45,7 @@ Write something, please.
 > [new branch][1] by `rongrenyuan`
 [1]: https://github.com/weijianwen/GitForBeginners/branches/rongrenyuan
 
-+ Hello World, April 12th,Duyue
+ Hello World, April 12th,Duyue
 + Hello World. April 9, Tank
 + I have forked a new branch! By zhaoyusu
 +i'll have a test later...April 11th,DUyue
