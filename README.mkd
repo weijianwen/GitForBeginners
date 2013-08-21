@@ -1,4 +1,3 @@
-
 This is the project GitForBeginners. It aims to assist the newbie to learn and use git.
 
 Sorry I just got too tired to write more words on this README file. Please read through the [git_beamer.pdf](https://github.com/weijianwen/GitForBeginners/blob/master/git_beamer.pdf?raw=true) and finish the exercises.
@@ -11,25 +10,33 @@ Limit your modification towards the project to the *Drfat Area (below)* of READM
 
 Feedback is always welcomed. You can open an issue on github (*recommended*) or write [me](mailto:weijianwen@sjtu.edu.cn) an email.
 
---------------------
+Recommended Materials for Learning git
+======
 
-# Recommended Materials for Learning git
- + ["Git Tutorials" by Li Yanrui (Chinese)](http://goo.gl/NBGgo)
- + [github:help](http://help.github.com/)
- + [Pro Git On line](http://progit.org/book/)
- + [Video: "Git the basics" by Bart Trojanowski](http://excess.org/article/2008/07/ogre-git-tutorial/)
- + [O'Reilly Book: Version Control With Git, 2nd Edition](http://shop.oreilly.com/product/0636920022862.do)
++ ["Git Tutorials" by Li Yanrui (Chinese)](http://goo.gl/NBGgo)
++ [github:help](http://help.github.com/)
++ [Pro Git On line](http://progit.org/book/)
++ [Video: "Git the basics" by Bart Trojanowski](http://excess.org/article/2008/07/ogre-git-tutorial/)
++ [O'Reilly Book: Version Control With Git, 2nd Edition](http://shop.oreilly.com/product/0636920022862.do)
 
---------------------
+Acknowledgement
+======
 
-# Acknowledgement
- + The slides are composed with [Markdown](http://daringfireball.net/projects/markdown/) language, and converted to [latex beamer](https://bitbucket.org/rivanvx/beamer/wiki/Home) with [pandoc](http://johnmacfarlane.net/pandoc/).
- + [XeTeX](http://www.tug.org/xetex/) is a nice typesetting system. [latexmk](http://www.phys.psu.edu/~collins/software/latexmk-jcc/) helps to hide the complexity of compilation.
- + The slides, along with the [project](https://github.com/weijianwen/GitForBeginners), are hosted on [github](https://github.com/).
++ The slides are composed with [Markdown](http://daringfireball.net/projects/markdown/) language, and converted to [latex beamer](https://bitbucket.org/rivanvx/beamer/wiki/Home) with [pandoc](http://johnmacfarlane.net/pandoc/).
++ [XeTeX](http://www.tug.org/xetex/) is a nice typesetting system. [latexmk](http://www.phys.psu.edu/~collins/software/latexmk-jcc/) helps to hide the complexity of compilation.
++ The slides, along with the [project](https://github.com/weijianwen/GitForBeginners), are hosted on [github](https://github.com/).
 
---------------------
+TODO
+======
 
-# Draft Area
++ A toc page at the beginning of every part.
++ hyperlinks to git commands
++ Where is the TT font?
++ Use definition list instead of bulleted list.
++ Handle the footnotes.
+
+Draft Area
+======
 
 Write something, please.
 + fine,July 27th,guangsheng
@@ -40,12 +47,9 @@ Write something, please.
 + GOT IT! April 8th, Otto Mao
 + Hello World, April 11th, Liumuqing
 + Hello World, April 11th,Duyue
-- It's <b>Otto</b>'s practice of [markdown](http://daringfireball.net/projects/markdown/)  language and mixed HTML
-- It's rainy,today. April 9th. **Rong Renyuan**	
-> [new branch][1] by `rongrenyuan`
-[1]: https://github.com/weijianwen/GitForBeginners/branches/rongrenyuan
-
- Hello World, April 12th,Duyue
++ It's <b>Otto</b>'s practice of [markdown](http://daringfireball.net/projects/markdown/)  language and mixed HTML
++ It's rainy,today. April 9th. **Rong Renyuan**	
++ Hello World, April 12th,Duyue
 + Hello World. April 9, Tank
 + I have forked a new branch! By zhaoyusu
 +i'll have a test later...April 11th,DUyue

@@ -1,19 +1,40 @@
-MAIN = git_beamer
-VIEWER = open
+MAIN 	:= gitbeamer
+VIEWER 	:= open
+REPOURL := https://raw.github.com/weijianwen/hpc-slides-class/master/pandoc
+DOCCLASS := hpcslides
+LATEX_OPT := -gg -xelatex -f
+PANDOC_DIR := pandoc
+PANDOC_SLIDES := -f markdown -t beamer --template=$(DOCCLASS).latex -V theme=AnnArbor -V colortheme=rose -V institute='Omni-Lab, Shanghai Jiaotong University\\{}\url{http://omnilab.sjtu.edu.cn}' --toc --listings --smart --reference-links --standalone 
 
 .PHONY : all clean
+.PRECIOUS : %.tex
 
 all: $(MAIN).pdf
-
-%.tex : %.mkd Makefile
-	# pandoc gittutorial.mkd --standalone -f markdown -t beamer -o $TEXFILE -V author='Jianwen WEI' -V fontsize=11pt -V theme=Boadilla -V title='Learning by Doing\\{}A Short I    ntroduction to git' -V date='\today'
-
-%.pdf : %.tex Makefile
-	-@latexmk -silent -f -pdf $*
 	
+%.pdf : %.tex $(DOCCLASS).cls $(DOCCLASS).cfg Makefile
+	-@latexmk $(LATEX_OPT) $*
+
 view : $(MAIN).pdf
 	-@$(VIEWER) $< &
 	
+$(DOCCLASS).% :
+	cp -P pandoc/$@ ./
+
+%.tex : $(DOCCLASS).latex %.mkd Makefile
+	@pandoc $(PANDOC_SLIDES) $*.mkd -o $@
+
 clean:
-	-@latexmk -c &> /dev/null
-	-@rm *.vrb *.snm *.nav *.fls &> /dev/null
+	-@latexmk -f -c $(MAIN)
+	-@rm *.toc *.aux *.fls *.fdb_latexmk *.out *.cfg *.cls *.latex
+
+distclean : clean
+	-@rm $(MAIN).pdf
+	-@latexmk -f -C $(MAIN)
+
+update :
+	@wget -q $(REPOURL)/$(DOCCLASS).cls -O pandoc/$(DOCCLASS).cls
+	@wget -q $(REPOURL)/$(DOCCLASS).cfg -O pandoc/$(DOCCLASS).cfg
+	@wget -q $(REPOURL)/$(DOCCLASS).latex -O pandoc/$(DOCCLASS).latex	
+release : 
+	git push gitlab
+	git push github
