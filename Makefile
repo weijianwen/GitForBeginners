@@ -1,4 +1,4 @@
-MAIN 	:= gitbeamer
+MAIN 	:= gittutorial
 VIEWER 	:= open
 REPOURL := https://raw.github.com/weijianwen/hpc-slides-class/master/pandoc
 DOCCLASS := hpcslides
