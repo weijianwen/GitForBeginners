@@ -34,6 +34,7 @@ TODO
 + Where is the TT font?
 + Use definition list instead of bulleted list.
 + Handle the footnotes.
++ Add ```git show```
 
 Draft Area
 ======

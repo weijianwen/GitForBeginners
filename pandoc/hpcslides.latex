@@ -1,4 +1,5 @@
-\documentclass[10pt]{hpcslides}
+\documentclass[$if(fontsize)$$fontsize$$endif$]{hpcslides}
+
 $if(theme)$
 \usetheme{$theme$}
 $endif$
@@ -44,6 +45,25 @@ $if(date)$
 \date{$date$}
 $endif$
 
+% Comment these out if you don't want a slide with just the
+% part/section/subsection/subsubsection title:
+\AtBeginPart{
+  \let\insertpartnumber\relax
+  \let\partname\relax
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \let\insertsectionnumber\relax
+  \let\sectionname\relax
+  \frame{\sectionpage}
+}
+\AtBeginSubsection{
+  \let\insertsubsectionnumber\relax
+  \let\subsectionname\relax
+  \frame{\subsectionpage}
+}
+
+
 \begin{document}
 $if(title)$
 \frame{\titlepage}
@@ -51,14 +71,14 @@ $endif$
 
 $for(include-before)$
 $include-before$
-
 $endfor$
+
 $if(toc)$
 \begin{frame}
 \tableofcontents[hideallsubsections]
 \end{frame}
-
 $endif$
+
 $body$
 
 $if(natbib)$

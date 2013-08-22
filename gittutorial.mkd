@@ -1,8 +1,7 @@
 % Learning by Doing\
  A Short Introduction to git 
 % Jianwen Wei\
- <weijianwen@sjtu.edu.cn>\
- <https://github.com/weijianwen/GitForBeginners>
+ <weijianwen@sjtu.edu.cn>
 % Aug 21, 2013\
 
 What is git?
@@ -46,7 +45,7 @@ Why git is better than X (SVN, CVS, ...)
 + Full repository clone
 + Local history: no need to connect to servers when viewing the revision history
 + Cheap branch and easy merge
-+ Lots of git host choice: [github][github], [Google Code][googlecode], [gitbucket][gitbucket], [gitlab][gitlab], [CodePlex][codeplex]...
++ Lots of git host choices: [github][github], [Google Code][googlecode], [gitbucket][gitbucket], [gitlab][gitlab], [CodePlex][codeplex]...
 + Other things: tidy working directory, better compression, multi work flow support, …
 
 [github]: https://github.com/
@@ -86,7 +85,7 @@ You can use git on a stand-alone computer and easily integrate the code into a m
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.45\textwidth]{gitstandalone.jpeg}
+\includegraphics[width=0.4\textwidth]{gitstandalone.jpeg}
 \caption{git's local work flow}
 \end{figure}
 
@@ -99,7 +98,7 @@ git's distributed work flow
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.6\textwidth]{figures/gitdvcs.png}
+\includegraphics[width=0.55\textwidth]{figures/gitdvcs.png}
 \caption{git's distributed work flow}
 \end{figure}
 
@@ -112,7 +111,7 @@ git's emulation to the centralized work flow (**RECOMMENDED**)
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.28\textwidth]{gitcent.jpeg}
+\includegraphics[width=0.23\textwidth]{gitcent.jpeg}
 \caption{git's centralized work flow for John and Jessica}
 \end{figure}
 
@@ -154,32 +153,29 @@ The most useful git command
 ```help```: Get help 
 ------
 
-```git help COMMAND``` Get help from git.
-
-+ ```git help add```
-+ ```git help commit```
-+ ...
+	git help add
+	git help commit
+	git help rebase
 
 ```init```: Initialize a local git repo for your project
 ------
 
-```init``` command will create a ```.git``` dir on the top level of your project.  
-
-   1. ```cd YOUR_PROJ_DIR```
-   2. ```git init .```
+	cd YOUR_PROJ_DIR
+	git init .
 
 ```status```: Show the status of your repo
 ------
 
-```git status```
+```git status``` also tells you how to *undo* the last operation on git.
 
-+ ```status``` tells you how to *undo* the last operation on git
-+ [File status][ref_gitstatus]: ```untracked```, ```unstaged```, ```staged``` (indexed), ```committed```. <!--[^commitstatus]-->
+		git status
+
+[File status in git][ref_gitstatus]: ```untracked```, ```unstaged```, ```staged``` (indexed), ```committed```. <!--[^commitstatus]-->
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.6\textwidth]{gitlifecycle.png}
-\caption{File Status Lifecycle}
+\includegraphics[width=0.48\textwidth]{gitlifecycle.png}
+\caption{File status life cycle}
 \end{figure}
 
 [ref_gitstatus]: http://progit.org/book/ch2-2.html
@@ -189,39 +185,41 @@ The most useful git command
 ```add```: A multi-function git command
 ------
 
-```git add FILES_OR_DIR```  
+	git add FILES_OR_DIR_LIST
 
-+ For untracked files: add them to git's control
-+ For unstaged changes: add them to the staged area
-+ For conflicted files: ```add``` marks them as "resolved"
++ For untracked files: add them to git's control.
++ For unstaged changes: add them to the staged area.
++ For conflicted files: ```add``` marks them as "resolved".
 
 ```.gitignore```: Ignore files
 ------
 
-+ Specify file types to ignore in ```.gitignore```, a normal text file.
-    - ```.tmp``` (Ignore all *.tmp files)
-    - ```.bak``` (Ignore all *.bak files)
-    - ```targets/*``` (Ignore all the files in ```targets/``` dir)
-+ git has an internal ```.gitignore```. You can ask git NOT to ignore some file types in ```.gitignore```.
-    - ```!*.o``` (*Don't* ignore *.o files)
-+ For more information, try ```git help gitignore```
++ Ignore all ```*.tmp```, ```*.old``` and files in dir ```tmp/```.
+
+		.tmp
+		.bak
+		targets/*
+
++ Do *NOT* ignore file ```results.txt``` in dir ```targets/```.
+
+		!targets/results.txt
+		
++ For more information, try ```git help gitignore```.
 
 commit: Store the status (snapshot) permanently
 ------
 
 + ```git commit -m "YOUR_COMMENT"```
-	+ ```git commit``` Stores the STAGED changes only
-	+ ```git commit -a``` Stores all the STAGED and UNSTAGED changes.
-+ Please write comment for each of your commit.
+	+ Stores the STAGED changes only
++ ```git commit -a -m "YOUR_COMMENT"``` 
+	+ Stores all the STAGED and UNSTAGED changes.
 + Each commit is identified by a **UNIQUE** SHA-1 ID of 40 ASCII characters. 
-
-```
-     commit dd5f924c40096b9cda27ffd1cfd1205822ab3c70
-     Author: Github Support <me@github.com>
-     Date:   Sun Apr 1 19:38:37 2012 +0800
-
-        Restart the git-tutorial project.
-```
+	
+		commit dd5f924c40096b9cda27ffd1cfd1205822ab3c70
+		Author: Github Support <me@github.com>
+		Date:   Sun Apr 1 19:38:37 2012 +0800
+		
+		   Restart the git-tutorial project.
 
 diff: Find differences 
 ------
@@ -252,7 +250,8 @@ tag: Mark a milestone version
 Submodule: Integrate multi git repos
 ------
 
-+ ```git help submodule```
+	git submodule add REPO_URL LOCAL_PATH
+
 + [Repo in Repo](http://progit.org/book/ch6-6.html)
 + Manage other repos as "submodules" in your project
 
@@ -309,7 +308,6 @@ Working with **remote**: ```clone```, remote, push, pull
 Working with **remote**: clone, ```remote```, push, pull
 ------
 
-+ ```remote``` Manages the set of tracked repositories.<!--[^gitremote]-->
 + ```git remote``` 
     - Show all the tracked repositories.
 + ```git remote show REPO_NAME``` 
@@ -368,13 +366,18 @@ Working with conflicts: merge, resolve, commit
 
 ```stash``` saves your temporary work and resets the files to HEAD version. You can handle some emergency fix first then continue to hack at a latter time.  
 
-1. ```git stash``` 
-    + Save the temp changes.
-3. ```git stash list``` 
-    + Check the stash list.
-2. EDIT and COMMIT your emergency fix.
-4. ```git stash pop``` 
-    + Continue to hack
+1. Save the temp changes.
+
+		git stash 
+     
+2. Check the stash list.
+
+		git stash list
+    
+3. EDIT and COMMIT your emergency fix.
+4. Continue to hack.
+	
+		git stash pop
 
 "Time Machine": stash, ```checkout```
 ------
@@ -444,11 +447,17 @@ Exercise 5: Manage remotes
 
 1. Clone *your* GitForBeginners.
 2. Show the remote repo aliases with:
-	```git remote -v```
+
+		git remote -v
+
 3. Rename remote alias ```origin``` to a *name you like* with
-	```git remote rename origin NAME_YOU_LIKE```
+
+	git remote rename origin NAME_YOU_LIKE
+
 4. Add [GitForBeginners](https://github.com/weijianwen/GitForBeginners) as the upstream repo with
-	```git remote add upstream git@github.com:weijianwen/GitForBeginners```
+
+		git remote add upstream \
+		git@github.com:weijianwen/GitForBeginners
 
 Exercise: Remote branch on github
 ------
@@ -462,7 +471,7 @@ The final challenge: Send a merge request
 
 Send me a merge request on github. That is, ask me to merge from your YOUR_NAME branch in your GitForBeginners repo, into the master branch in my GitForBeginners repo.
 
-> *Congratulations! You will get your gitlab account after this challenge. Please check your mailbox.*
+**Congratulations! You will get your gitlab account after this challenge. Please check your mailbox.**
 
 Appendix
 ======
@@ -475,6 +484,7 @@ Recommended Materials for Learning git
  + [Pro Git On line](http://progit.org/book/)
  + [Video: "Git the basics" by Bart Trojanowski](http://excess.org/article/2008/07/ogre-git-tutorial/)
  + [O'Reilly Book: Version Control With Git, 2nd Edition](http://shop.oreilly.com/product/0636920022862.do)
+ + ["GitforBeginners" by Jianwen Wei, hosted on github](https://github.com/weijianwen/GitForBeginners)
 
 Acknowledgement
 ------

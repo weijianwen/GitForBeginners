@@ -4,7 +4,7 @@ REPOURL := https://raw.github.com/weijianwen/hpc-slides-class/master/pandoc
 DOCCLASS := hpcslides
 LATEX_OPT := -gg -xelatex -f
 PANDOC_DIR := pandoc
-PANDOC_SLIDES := -f markdown -t beamer --template=$(DOCCLASS).latex -V theme=AnnArbor -V colortheme=rose -V institute='Omni-Lab, Shanghai Jiaotong University\\{}\url{http://omnilab.sjtu.edu.cn}' --toc --listings --smart --reference-links --standalone 
+PANDOC_SLIDES := -f markdown -t beamer --template=$(DOCCLASS).latex -V theme=AnnArbor -V colortheme=rose -V institute='Omni-Lab, Shanghai Jiaotong University\\{}\url{http://omnilab.sjtu.edu.cn}' -V fontsize=11pt --toc --listings --smart --reference-links --standalone 
 
 .PHONY : all clean
 .PRECIOUS : %.tex
