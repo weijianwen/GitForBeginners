@@ -31,10 +31,9 @@ TODO
 
 + A toc page at the beginning of every part.
 + hyperlinks to git commands
-+ Where is the TT font?
 + Use definition list instead of bulleted list.
 + Handle the footnotes.
-+ Add ```git show```
++ Add ```git show``` section.
 
 Draft Area
 ======
