@@ -476,7 +476,7 @@ Send me a merge request on github. That is, ask me to merge from your YOUR_NAME 
 Appendix
 ======
 
-Recommended Materials for Learning git
+Reference and more information
 ------
 
  + ["Git Tutorials" by Li Yanrui](http://goo.gl/NBGgo)
@@ -484,6 +484,7 @@ Recommended Materials for Learning git
  + [Pro Git On line](http://progit.org/book/)
  + [Video: "Git the basics" by Bart Trojanowski](http://excess.org/article/2008/07/ogre-git-tutorial/)
  + [O'Reilly Book: Version Control With Git, 2nd Edition](http://shop.oreilly.com/product/0636920022862.do)
+ + ["Git Reference"](http://gitref.org/basic/)
  + ["GitforBeginners" by Jianwen Wei, hosted on github](https://github.com/weijianwen/GitForBeginners)
 
 Acknowledgement
