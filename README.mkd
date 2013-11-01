@@ -39,6 +39,7 @@ Draft Area
 ======
 
 Write something, please.
++ Hello. I am Li Huaxin.Nov,1st,2013
 + Hello, I'm Zhang Honglun, Oct 15th,2013
 + Hello, this is my first try. October 8th, By Zhang Bin
 + hello, just try, 9/13 Lixin Yao
