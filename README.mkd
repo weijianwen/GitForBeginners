@@ -1,4 +1,3 @@
-hello git , from wangjieyi 2013,11,14
 This is the project GitForBeginners. It aims to assist the newbie to learn and use git.
 
 Sorry I just got too tired to write more words on this README file. Please read through the [git_beamer.pdf](https://github.com/weijianwen/GitForBeginners/blob/master/git_beamer.pdf?raw=true) and finish the exercises.
@@ -40,6 +39,7 @@ Draft Area
 ======
 
 Write something, please.
++ Hello git,from wangjieyi.2013.11.14
 + Hello from new branch. I am Li Huaxin.Nov,1st,2013
 + Hello, I'm Zhang Honglun, Oct 15th,2013
 + Hello, this is my first try. October 8th, By Zhang Bin
