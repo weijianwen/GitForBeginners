@@ -25,7 +25,7 @@ $(DOCCLASS).% :
 
 clean:
 	-@latexmk -f -c $(MAIN)
-	-@rm *.toc *.aux *.fls *.fdb_latexmk *.out *.cfg *.cls *.latex
+	-@rm -f *.nav *.snm *.vrb *.toc *.aux *.fls *.fdb_latexmk *.out *.cfg *.cls *.latex
 
 distclean : clean
 	-@rm $(MAIN).pdf
@@ -35,6 +35,7 @@ update :
 	@wget -q $(REPOURL)/$(DOCCLASS).cls -O pandoc/$(DOCCLASS).cls
 	@wget -q $(REPOURL)/$(DOCCLASS).cfg -O pandoc/$(DOCCLASS).cfg
 	@wget -q $(REPOURL)/$(DOCCLASS).latex -O pandoc/$(DOCCLASS).latex	
+
 release : 
 	git push gitlab
 	git push github
