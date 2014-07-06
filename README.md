@@ -71,7 +71,10 @@ Write something, please.
 + Have a nice day! August 15th, Jingyang
 + hello world,finished. Octorber 10th, Zhang Yiwei
 + Hey, this is theo. July 2nd, Si Yumeng.
+<<<<<<< HEAD:README.md
 + This is my branch, so I can do whatever I want.
 + Hello guys, I am Xu Fangzheng, you can call me Frank. Jul 6th
 + OKOOOKOOKOKOKOKOKO
 + Gefei, July 4th.
++ This is my branch, so I can do whatever I wan
+hello world. July 3rd, Xie Xiaobin
