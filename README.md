@@ -39,6 +39,10 @@ Draft Area
 ======
 
 Write something, please.
++ Hello git,from wangjieyi.2013.11.14
++ Hello from new branch. I am Li Huaxin.Nov,1st,2013
++ Hello, I'm Zhang Honglun, Oct 15th,2013
++ Hello, this is my first try. October 8th, By Zhang Bin
 + hello, just try, 9/13 Lixin Yao
 + fine,July 27th,guangsheng
 + Have a nice summer vacation. June 15th, Yansong
@@ -65,3 +69,7 @@ Write something, please.
 + Nice Day, July 13th . liyingkai
 + haha~~ finish! ,July 23th(American time),Bowen
 + Have a nice day! August 15th, Jingyang
++ hello world,finished. Octorber 10th, Zhang Yiwei
++ Hey, this is theo. July 2nd, Si Yumeng.
++ This is my branch, so I can do whatever I want.
++ Hello guys, I am Xu Fangzheng, you can call me Frank. Jul 6th
