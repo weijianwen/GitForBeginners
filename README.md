@@ -35,7 +35,7 @@ TODO
 + Handle the footnotes.
 + Add ```git show``` section.
 
-Draft Area
+Scratch Area
 ======
 
 Write something, please.
@@ -58,7 +58,7 @@ Write something, please.
 + Hello World, April 12th,Duyue
 + Hello World. April 9, Tank
 + I have forked a new branch! By zhaoyusu
-+i'll have a test later...April 11th,DUyue
++ i'll have a test later...April 11th,DUyue
 + hello everybody. April 11th, napu
 + git exercise . April 11th , Gong Wenjuan
 + a new branch "gongwenjuan". April 11th, Gong Wenjuan
@@ -72,11 +72,10 @@ Write something, please.
 + Have a nice day! August 15th, Jingyang
 + hello world,finished. Octorber 10th, Zhang Yiwei
 + Hey, this is theo. July 2nd, Si Yumeng.
-<<<<<<< HEAD:README.md
 + This is my branch, so I can do whatever I want.
 + Hello guys, I am Xu Fangzheng, you can call me Frank. Jul 6th
 + OKOOOKOOKOKOKOKOKO
 + Gefei, July 4th.
 + This is my branch, so I can do whatever I wan
-hello world. July 3rd, Xie Xiaobin
-this is my first branch
++ hello world. July 3rd, Xie Xiaobin
++ this is my first branch
