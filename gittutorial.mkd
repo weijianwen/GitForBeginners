@@ -2,7 +2,7 @@
  A Short Introduction to git 
 % Jianwen Wei\
  <weijianwen@sjtu.edu.cn>
-% Aug 21, 2013\
+% \today\
 
 What is git?
 ======
