@@ -1,41 +1,29 @@
 MAIN 	:= gittutorial
-VIEWER 	:= open
-REPOURL := https://raw.github.com/weijianwen/hpc-slides-class/master/pandoc
 DOCCLASS := hpcslides
 LATEX_OPT := -gg -xelatex -f
-PANDOC_DIR := pandoc
-PANDOC_SLIDES := -f markdown -t beamer --template=$(DOCCLASS).latex -V theme=AnnArbor -V colortheme=rose -V institute='Omni-Lab, Shanghai Jiaotong University\\{}\url{http://omnilab.sjtu.edu.cn}' -V fontsize=11pt --toc --listings --smart --reference-links --standalone 
+PANDOC_OPTION := -f markdown -t beamer --template=hpcslides.latex -V theme=AnnArbor -V colortheme=rose -V institute='Omni-Lab, Shanghai Jiaotong University\\{}\url{http://omnilab.sjtu.edu.cn}' -V fontsize=11pt --toc --listings --smart --reference-links --standalone 
 
-.PHONY : all clean
-.PRECIOUS : %.tex
+.PHONY : all clean git
 
 all: $(MAIN).pdf
 	
-%.pdf : %.tex $(DOCCLASS).cls $(DOCCLASS).cfg Makefile
+%.pdf : %.tex Makefile
 	-@latexmk $(LATEX_OPT) $*
 
-view : $(MAIN).pdf
-	-@$(VIEWER) $< &
-	
-$(DOCCLASS).% :
-	cp -P pandoc/$@ ./
-
-%.tex : $(DOCCLASS).latex %.mkd Makefile
-	@pandoc $(PANDOC_SLIDES) $*.mkd -o $@
+%.tex : %.mkd hpcslides.latex Makefile
+	@pandoc $(PANDOC_OPTION) $*.mkd -o $@
 
 clean:
 	-@latexmk -f -c $(MAIN)
-	-@rm -f *.nav *.snm *.vrb *.toc *.aux *.fls *.fdb_latexmk *.out *.cfg *.cls *.latex
+	-@rm -f *.nav *.snm *.vrb *.toc *.aux *.fls *.fdb_latexmk *.out
 
 distclean : clean
-	-@rm $(MAIN).pdf
 	-@latexmk -f -C $(MAIN)
 
-update :
-	@wget -q $(REPOURL)/$(DOCCLASS).cls -O pandoc/$(DOCCLASS).cls
-	@wget -q $(REPOURL)/$(DOCCLASS).cfg -O pandoc/$(DOCCLASS).cfg
-	@wget -q $(REPOURL)/$(DOCCLASS).latex -O pandoc/$(DOCCLASS).latex	
+s3 : $(MAIN).pdf
+	s3cmd put $< s3://gitforbeginners/
 
-release : 
+git : 
 	git push gitlab
 	git push github
+

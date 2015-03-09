@@ -1,5 +1,6 @@
 .DS_Store
 gittutorial.tex
+*.pdf
 *.fls
 *.aux
 *.log
@@ -12,4 +13,5 @@ gittutorial.tex
 *.vrb
 *.latexmk
 *.fdb_latexmk
+*.tex
 *~

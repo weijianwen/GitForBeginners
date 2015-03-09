@@ -1,16 +1,27 @@
-This is the project GitForBeginners. It aims to assist the newbie to learn and use git.
+GitForBeginners
+------
 
-Sorry I just got too tired to write more words on this README file. Please read through the [git_beamer.pdf](https://github.com/weijianwen/GitForBeginners/blob/master/git_beamer.pdf?raw=true) and finish the exercises.
+This repo hosts the source code for the slides delivered in the git tutorial course. A pre-built PDF file can be found at <https://s3.amazonaws.com/gitforbeginners/gittutorial.pdf>.
 
-For the intren students in our lab, please follow me on github (Well, you can unfollow me later). Then *wait* for my message before you preceed to clone the project.
+To build the PDF slides, the following perquisites should be met:
 
-```git clone git@github.com:weijianwen/GitForBeginners.git```
+* [Pandoc v1.11 or above](http://johnmacfarlane.net/pandoc/)
+* A TeX with XeTeX support
 
-Limit your modification towards the project to the *Drfat Area (below)* of README.mkd, unless you're sure that what you are doing is a *contribution* to the project.
+How to Build it
+======
 
-Feedback is always welcomed. You can open an issue on github (*recommended*) or write [me](mailto:weijianwen@sjtu.edu.cn) an email.
+1. Clone the repo.
 
-Recommended Materials for Learning git
+		$ git clone https://github.com/weijianwen/GitForBeginners.git
+
+2. Build the PDF slides
+
+		$ make clean all
+
+3. Follow instructions in ```gittutorial.pdf``` and finish all exercises there.
+
+Reference
 ======
 
 + ["Git Tutorials" by Li Yanrui (Chinese)](http://goo.gl/NBGgo)
