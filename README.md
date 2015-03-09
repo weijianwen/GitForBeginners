@@ -1,5 +1,5 @@
 GitForBeginners
-------
+======
 
 This repo hosts the source code for the slides delivered in the git tutorial course. A pre-built PDF file can be found at <https://s3.amazonaws.com/gitforbeginners/gittutorial.pdf>.
 
@@ -9,7 +9,7 @@ To build the PDF slides, the following perquisites should be met:
 * A TeX with XeTeX support
 
 How to Build it
-======
+------
 
 1. Clone the repo.
 
@@ -22,7 +22,7 @@ How to Build it
 3. Follow instructions in ```gittutorial.pdf``` and finish all exercises there.
 
 Reference
-======
+------
 
 + ["Git Tutorials" by Li Yanrui (Chinese)](http://goo.gl/NBGgo)
 + [github:help](http://help.github.com/)
@@ -31,14 +31,14 @@ Reference
 + [O'Reilly Book: Version Control With Git, 2nd Edition](http://shop.oreilly.com/product/0636920022862.do)
 
 Acknowledgement
-======
+------
 
 + The slides are composed with [Markdown](http://daringfireball.net/projects/markdown/) language, and converted to [latex beamer](https://bitbucket.org/rivanvx/beamer/wiki/Home) with [pandoc](http://johnmacfarlane.net/pandoc/).
 + [XeTeX](http://www.tug.org/xetex/) is a nice typesetting system. [latexmk](http://www.phys.psu.edu/~collins/software/latexmk-jcc/) helps to hide the complexity of compilation.
 + The slides, along with the [project](https://github.com/weijianwen/GitForBeginners), are hosted on [github](https://github.com/).
 
 TODO
-======
+------
 
 + A toc page at the beginning of every part.
 + hyperlinks to git commands
@@ -47,7 +47,7 @@ TODO
 + Add ```git show``` section.
 
 Scratch Area
-======
+------
 
 Write something, please.
 + Hello omnilab,from Pengfei Shi.2014.11.12
